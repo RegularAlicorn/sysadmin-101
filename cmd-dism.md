@@ -37,5 +37,6 @@ Yes, use `slmgr /rearm` to reset the grace period to 180 days. This is possible 
 ## Can you insert a driver into your newly created image?
 
 You can insert a driver into a Windows image with the following command:
-```DISM.exe /image:"c:\images\Image1" /Add-Driver /ForceUnsigned /DriverName:"C:\Drivers\1.inf" /DriverName:"C:\Drivers\2.inf" /DriverName:"C:\Drivers\3.inf"
+```
+DISM.exe /image:"c:\images\Image1" /Add-Driver /ForceUnsigned /DriverName:"C:\Drivers\1.inf" /DriverName:"C:\Drivers\2.inf" /DriverName:"C:\Drivers\3.inf"
 ```
