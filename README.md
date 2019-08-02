@@ -24,7 +24,7 @@ Please submit pull requests to us for new topics, use issues for typos, errors o
 
 ## License
 
-This project is licensed under the GNU GPL v3.0 License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the GNU GPL v3.0 License - see the [LICENSE](LICENSE) file for details
 
 ## Acknowledgments
 
