@@ -70,6 +70,9 @@ No one does green field research within IT. We learn from others who came before
   * when to use?
 * Wireshark basics
   * when to use?
+* Windows Server Roles
+  * WSUS
+   * Use-case
 * Netstat
 * Ping
   * -a
