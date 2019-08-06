@@ -33,6 +33,7 @@ No one does green field research within IT. We learn from others who came before
 ## Topics
 * netsh
   * Set persistent mtu
+* netstat
 * Ip
   * Address format
   * subnet (calculations)
