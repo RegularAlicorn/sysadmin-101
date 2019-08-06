@@ -31,7 +31,6 @@ This project is licensed under the GNU GPL v3.0 License - see the [LICENSE](LICE
 No one does green field research within IT. We learn from others who came before us. Never forget the blood and sweat put into knowledge, which seemingly is obvious and easy to understand.
 
 ## Topics
-* Dism
 * netsh
   * Set persistent mtu
 * Ip
