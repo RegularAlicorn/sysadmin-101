@@ -1,5 +1,4 @@
 # Topics
-* netstat
 * Ip
   * Address format
   * subnet (calculations)
