@@ -38,7 +38,6 @@
 * Windows Server Roles
   * WSUS
    * Use-case
-* Netstat
 * Ping
   * -a
   * latency
