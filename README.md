@@ -2,6 +2,8 @@
 
 Sysadmin 101 knowledge collection, still lots and lots to write.
 
+**This collection is for windows heavy shops**
+
 ## Getting Started
 
 Read. Think. Learn. Repeat!
