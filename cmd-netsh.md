@@ -71,4 +71,5 @@ If you want to only trace IPv4 for a specific address use ``netsh trace start ca
 * You can check available providers with ``netsh trace show providers``
 * You can check available interfaces with ``netsh trace show interfaces``
   * Restrict traffic to an interface with ``netsh trace start capture=yes CaptureInterface='{Interface-GUID}'``
+
 All filters are combinable to create a complex trace with minimal noise.
