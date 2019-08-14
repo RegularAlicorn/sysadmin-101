@@ -41,6 +41,20 @@ You can insert a driver into a Windows image with the following command:
 DISM.exe /image:"c:\images\Image1" /Add-Driver /ForceUnsigned /DriverName:"C:\Drivers\1.inf" /DriverName:"C:\Drivers\2.inf" /DriverName:"C:\Drivers\3.inf"
 ```
 
+## I can't install .NET3.5 on my new server
+The .NET3.5 sources have been removed in newer server installations. You can install the component from its ISO. If the Windows ISO is mounted to drive H:
+```
+dism /Online /Enable-Feature /FeatureName:NetFx3 /All /LimitAccess /Source:"H:\sources\sxs"
+```
+
+## How do you enable optional features like Telnet?
+First: You don't enable Telnet. This is for educational purposes and test-systems only!
+If you are aware of the serious security issue if you enable telnet use the following command
+```
+dism /Online /Enable-Feature /FeatureName:telnetclient
+```
+You can enable other features by inserting the correct feature name.
+
 ## Last resort fixing
 If you tried everything and a reinstall is costly - for unknown reason - you can fire off these last-resort-commands in an eleveated command prompt and hope for the best
 ```
