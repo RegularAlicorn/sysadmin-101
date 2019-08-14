@@ -1,18 +1,14 @@
 # sysadmin-101
 
-Sysadmin 101 knowledge collection
+Sysadmin 101 knowledge collection, still lots and lots to write.
 
 ## Getting Started
 
 Read. Think. Learn. Repeat!
 
-### Structure
+## Structure
 
 Categories are sorted into directories, topics are split into file within a directory.
-
-## Running the tests
-
-Explain how to run the automated tests for this system
 
 ## Deployment
 
