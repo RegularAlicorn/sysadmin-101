@@ -40,3 +40,17 @@ You can insert a driver into a Windows image with the following command:
 ```
 DISM.exe /image:"c:\images\Image1" /Add-Driver /ForceUnsigned /DriverName:"C:\Drivers\1.inf" /DriverName:"C:\Drivers\2.inf" /DriverName:"C:\Drivers\3.inf"
 ```
+
+## Last resort fixing
+If you tried everything and a reinstall is costly - for unknown reason - you can fire off these last-resort-commands in an eleveated command prompt and hope for the best
+```
+REM Only answer Microsoft ever offers in their forums, works 1 in 10mio tries.
+sfc /scannow
+REM Cleanup windows components, add /ResetBase if you want full cleanup
+REM With /ResetBase added you won't be able to deinstall any Update!
+dism /Online /Cleanup-Image /StartComponentCleanup
+REM Scans component storage for errors
+dism /Online /Cleanup-Image /ScanHealth
+REM Tries to automatically repair errors in the component storage
+dism /Online /Cleanup-Image /RestoreHealth
+```
