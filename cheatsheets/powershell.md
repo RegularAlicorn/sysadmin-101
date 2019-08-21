@@ -2,8 +2,11 @@
 
 ## Manual
 **Find installed modules** ``Get-InstalledModule``
+
 **Find command by name** ``Get-Command "*<PartialName>*"``
+
 **All commands of a module** ``Get-Command -FullyQualifiedModule <ModuleName>``
+
 **Help for a commmand** ``Get-Help <CommandName>``
 
 ## Development Environment
