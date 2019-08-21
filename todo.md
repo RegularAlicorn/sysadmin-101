@@ -6,7 +6,6 @@
   * ipv4 vs ipv6
 * Firewall rules
 * TCP vs UDP
-* PowerShell basics
 * Active Directory basics
   * Setup
   * Domain Controller
