@@ -1,7 +1,7 @@
 # Powershell Cheatsheet
 
 ## Manual
-**Find installed modules** `Get-InstalledModule`
+**Find installed modules** `Get-InstalledModule`{.powershell}
 
 **Find command by name** `Get-Command "*<PartialName>*"`
 
