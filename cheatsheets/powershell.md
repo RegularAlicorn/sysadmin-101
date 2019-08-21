@@ -77,7 +77,7 @@ Get-ItemProperty chrome
 ## Development Environment
 **Install a new module** `Install-Module -Name <ModuleName>`
 
-## Handle AD
+## Active Directory Module
 **Basics**
 ```powershell
 # Import Powershell AD Module
@@ -116,7 +116,7 @@ Get-ADGroup -Identity "Fantastic4"
 Get-ADComputer -Filter 'Name -like "server*"'
 
 # Filtered search with additional properties
-Get-ADUser -Filter "Name -like "Mr*"' -SearchBase "CN=users,DC=example,DC=com" -Properties Description
+Get-ADUser -Filter 'Name -like "Mr*"' -SearchBase "CN=users,DC=example,DC=com" -Properties Description
 
 # Get group members
 Get-ADGroupMember -Identity "Fantastic4" -Recursive
