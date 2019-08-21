@@ -35,15 +35,16 @@ $data.ForEach({ $_ })
 ```
 
 **Speed difference**
+
 ForEach is faster for processing lots of iterative data cycles. The pipeline - while useful for one-liners - is slower. A quick run of some math operations gave me the following results:
 
 Pipeline: _5098 milliseconds_
 
 ForEach:  _4193 milliseconds_
 
-ForEach only needed 82.2% of the pipeline time, which is a lot! While this test is not exactly scientific it still shows the relevant information to make a better informed choice on the next script.
+ForEach only took 82.2% of the pipeline time, which is a lot! While this test is not exactly scientific it still shows the relevant information to make a better informed choice on the next script.
 
-I used the following code for a quick test
+I used the following code for a quick test:
 ```powershell
 $data = @()
 for($i = 0;$i -lt 100000;$i++) {
