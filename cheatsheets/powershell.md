@@ -74,10 +74,85 @@ Set-Location HKCU:/Software/Chrome
 Get-Item chrome
 Get-ItemProperty chrome
 ```
-
 ## Development Environment
 **Install a new module** `Install-Module -Name <ModuleName>`
 
+## Handle AD
+**Basics**
+```powershell
+# Import Powershell AD Module
+Import-Module ActiveDirectory
+
+# Forest object
+Get-ADForest example.com
+
+# Domain object
+Get-ADDomain sub.example.com
+
+# Check current domain/forest functional level
+(Get-ADDomain sub.example.com).DomainMode
+(Get-ADForest example.com).ForestMode
+
+# Raise domain functional level, this requires ALL domain controller to be atleast at that version
+Set-ADDomainMode -Identity sub.example.com -DomainMode Windows2012R2Domain
+
+# Raise forest functional level, this requires ALL DOMAINS to be atleast at that version
+Set-ADForestMode -Identity example.com -ForestMode Windows2012R2Forest
+
+# Find current FSMO role holders
+netdom /query FSMO
+
+# Move FSMO roles, only FORCE if you are sure to NEVER use the old role holder EVER AGAIN. EVER!
+Move-ADDirectoryServerOperationMasterRole -Identity "DC01" `
+    -OperationMasterRole DomainNamingMaster,InfrastructureMaster,PDCEmulator,RIDMaster,SchemaMaster
+
+# Get user object
+Get-ADUser -Identity "Mr Fantastic"
+
+# Get group object
+Get-ADGroup -Identity "Fantastic4"
+
+# Get computer object
+Get-ADComputer -Filter 'Name -like "server*"'
+
+# Filtered search with additional properties
+Get-ADUser -Filter "Name -like "Mr*"' -SearchBase "CN=users,DC=example,DC=com" -Properties Description
+
+# Get group members
+Get-ADGroupMember -Identity "Fantastic4" -Recursive
+
+# Deactivate some account
+Disable-ADAccount -Identity MrFantastic
+
+# Enable some account
+Enable-ADAccount -Identity MrFantastic
+
+# Unlock a locked account
+Unlock-ADAccount -Identity MrFantastic
+
+# Get default domain password policy
+Get-ADDefaultDomainPasswordPolicy -Identity example.com
+
+# Get all fine-grained password policies, filter for just "*" is enough
+Get-ADFineGrainedPasswordPolicy -Filter {name -like "*"}
+
+# Get to which subjects a fine-grained password policy has been applied to
+Get-ADFineGrainedPasswordPolicySubject -Identity 'Super 4 Secure'
+
+# Add a group to an existing fine-grained password policy
+Add-ADFineGrainedPasswordPolicySubject 'Super 4 Secure' -Subjects "Fantastic4"
+```
+**Recycle bin feature** _(Requires forest on atleast 2008R2)_
+```powershell
+# Enable recycle bin feature
+Enable-ADOptionalFeature 'Recycle Bin Feature' -Scope ForestOrConfigurationSet -Target 'example.com'
+
+# Get all deleted objects not named like "test"
+Get-ADObject -Filter {IsDeleted -eq $True -and Name -notlike "test*"} -IncludeDeletedObjects
+
+# Restore some deleted user object
+Get-ADObject -Filter 'samaccountname -eq "MrFantastic"' -IncludeDeletedObjects | Restore-ADObject
+```
 ## Looping
 Given a dataset _$data_ of values
 
