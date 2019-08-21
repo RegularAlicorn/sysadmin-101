@@ -38,6 +38,43 @@ You can change the values of environment variables similar to `set` of the comma
 **Add C:\scripts\ to the current _PATH_** `$env:Path += 'C:\scripts'`
 **Remove variable _"scripts"_** `$env:scripts = ''` _OR_ `$env:scripts = $null`
 
+## Powershell drives
+PSDrives are a the way of powershell to handle different working directories. This does not only include the intuitive filesystem drives but also the registry, ws management, windows environment variables, and active directory.
+
+You can see all available drives with the following command and change location into them with `cd <Name>:` or `Set-Location <Name>:`
+```powershell
+# Display all drives
+Get-PSDrive
+# Change location to Alias
+Set-Location Alias:
+# Display all alias-commands in current session
+Get-ChildItem
+
+# Find alias translation for ?
+Get-ChildItem | Where-Object {$_.Name -eq '%'}
+# Hence we can use
+Get-ChildItem | ? {$_.Name -eq 'ls'}
+# And
+ls | ? {$_.Name -eq 'ogv'}
+
+# Switch to Active Directory drive
+Set-Location AD:
+# Display contents
+ls
+# Switch to domain
+Set-Location "dc=example,dc=com"
+# Switch to container "users" and display all users
+# Always use the most significant part of the distinguishedName to traverse
+cd CN=Users
+ls
+
+# Switch to Registry current user/Software/Chrome
+Set-Location HKCU:/Software/Chrome
+# Read Item "chrome"
+Get-Item chrome
+Get-ItemProperty chrome
+```
+
 ## Development Environment
 **Install a new module** `Install-Module -Name <ModuleName>`
 
