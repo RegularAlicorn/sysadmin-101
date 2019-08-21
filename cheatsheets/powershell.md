@@ -71,7 +71,7 @@ Pipeline: _5098 milliseconds_
 
 ForEach:  _4193 milliseconds_
 
-ForEach only took 82.2% of the pipeline time, which is a lot! While this test is not exactly scientific it still shows the relevant information to make a better informed choice on the next script.
+ForEach only took **82.2%** of the pipeline time, which is a lot! While this test is not exactly scientific it still shows the relevant information to make a better informed choice on the next script.
 
 I used the following code for a quick test:
 ```powershell
