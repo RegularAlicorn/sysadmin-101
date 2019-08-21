@@ -142,7 +142,7 @@ Get-ADFineGrainedPasswordPolicySubject -Identity 'Super 4 Secure'
 # Add a group to an existing fine-grained password policy
 Add-ADFineGrainedPasswordPolicySubject 'Super 4 Secure' -Subjects "Fantastic4"
 ```
-**Recycle bin feature** _(Requires forest on atleast 2008R2)_
+**Recycle bin feature** _(Requires forest fuctional level of at least 2008R2)_
 ```powershell
 # Enable recycle bin feature
 Enable-ADOptionalFeature 'Recycle Bin Feature' -Scope ForestOrConfigurationSet -Target 'example.com'
