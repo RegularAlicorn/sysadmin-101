@@ -10,15 +10,15 @@ Read. Think. Learn. Repeat!
 
 ## Structure
 
-Categories are sorted into directories, topics are split into file within a directory.
+Categories are sorted into directories, topics are split into files within a directory.
 
-## Deployment
+## Usage
 
 Use these snips to learn or check on others knowledge as you see fit.
 
 ## Contributing
 
-Please submit pull requests to us for new topics, use issues for typos, errors or other 
+Please submit pull requests for topic requests, and use issues for typos, errors or additional notes
 
 ## License
 
