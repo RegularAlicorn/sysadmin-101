@@ -13,7 +13,8 @@
 **Install a new module** ``Install-Module -Name <ModuleName>``
 
 ## Looping
-Given a dataset $data of values.
+Given a dataset __$data__ of values
+
 **Powershell Pipeline**
 ```
 # Pipeline into ForEach block
@@ -35,8 +36,11 @@ $data.ForEach({ $_ })
 
 **Speed difference**
 ForEach is faster for processing lots of iterative data cycles. The pipeline - while useful for one-liners - is slower. A quick run of some math operations gave me the following results:
+
 Pipeline: **5098 milliseconds**
+
 ForEach:  **4193 milliseconds**
+
 ForEach only needed 82.2% of the pipeline time, which is a lot! While this test is not exactly scientific it still shows the relevant information to make a better informed choice on the next script.
 
 I used the following code for a quick test
