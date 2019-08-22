@@ -25,6 +25,7 @@ cd %ALLUSERSPROFILE%\VMware\vCenterServer\cfg\vsphere-client
 3. Edit _webclient.properties_ and set `sso.pending.password.expiration.notification.days = <days>`. This is the number of days before the notification about expiring password _appears_. Setting this to **-1** might disable any notification.
 
 4. Restart the service
+
 **Linux**
 ```
 // vSphere Client (HTML5)
