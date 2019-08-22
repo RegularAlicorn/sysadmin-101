@@ -40,6 +40,7 @@ service-control --start vsphere-client
 ```
 **Windows**
 ```shell
+# Binary path
 cd "C:\Program Files\VMware\vCenter Server\bin\"
 
 # vSphere Client (HTML5)
@@ -49,7 +50,8 @@ service-control --start vsphere-ui
 # vSphere Web Client (Flash)
 service-control --stop vspherewebclientsvc
 service-control --start vspherewebclientsvc
-
+```
+```powershell
 # Using powershell
 Get-Service vsphere-ui | Restart-Service -Force
 Get-Service vspherewebclientsvc | Restart-Service -Force
