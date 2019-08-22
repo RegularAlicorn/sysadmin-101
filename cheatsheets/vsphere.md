@@ -1,6 +1,8 @@
 # VSphere
 
-## Change vSphere Password expiration notification banner
+## Configuration
+
+### Change vSphere Password expiration notification banner
 If you use your Active Directory as an Identity Source, you will get yellow notification banners on top, counting down from **30**. These settings seem in no way synced with your AD configurations.
 
 1. Login to your vCenter as an Administrator
