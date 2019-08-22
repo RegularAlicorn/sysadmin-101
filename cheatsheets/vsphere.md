@@ -6,15 +6,16 @@ If you use your Active Directory as an Identity Source, you will get yellow noti
 1. Login to your vCenter as an Administrator
 2. Change Location
 
-Linux | Windows
----------------
+  **Linux**
 ```
 // vSphere Client (HTML5)
 cd /etc/vmware/vsphere-ui
 
 // vSphere Web Client (Flash)
 cd /etc/vmware/vsphere-client
-``` | ```
+```
+  **Windows**
+```
 // vSphere Client (HTML5)
 cd %ALLUSERSPROFILE%\VMware\vCenterServer\cfg\vsphere-ui
 
