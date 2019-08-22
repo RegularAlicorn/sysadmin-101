@@ -1,4 +1,4 @@
-# VSphere
+# vSphere
 
 ## Configuration
 
