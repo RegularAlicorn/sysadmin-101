@@ -9,7 +9,7 @@ If you use your Active Directory as an Identity Source, you will get yellow noti
 2. Change Location
 
 **Linux**
-```
+```shell
 // vSphere Client (HTML5)
 cd /etc/vmware/vsphere-ui
 
@@ -17,7 +17,7 @@ cd /etc/vmware/vsphere-ui
 cd /etc/vmware/vsphere-client
 ```
 **Windows**
-```
+```shell
 // vSphere Client (HTML5)
 cd %ALLUSERSPROFILE%\VMware\vCenterServer\cfg\vsphere-ui
 
@@ -29,7 +29,7 @@ cd %ALLUSERSPROFILE%\VMware\vCenterServer\cfg\vsphere-client
 4. Restart the service
 
 **Linux**
-```
+```shell
 // vSphere Client (HTML5)
 service-control --stop vsphere-ui
 service-control --start vsphere-ui
@@ -39,7 +39,7 @@ service-control --stop vsphere-client
 service-control --start vsphere-client
 ```
 **Windows**
-```
+```shell
 cd "C:\Program Files\VMware\vCenter Server\bin\"
 
 // vSphere Client (HTML5)
