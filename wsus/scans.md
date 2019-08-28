@@ -9,7 +9,7 @@ Command | Description
 /DetectNow | Detect available updates, udpate settings like download apply
 /UpdateNow | Install available updates
 /ShowWindowsUpdate | Opens the Windows Update dialog box
-/ResetAuthorization | Deletes current SUS ID (WSUS SID)[1]
+/ResetAuthorization | Deletes current SUS ID (WSUS SID)[Note][1]
 /SelfUpdateManaged | Scan for available updates using Wsus
 /SelfUpdateUnmanaged | Scan for available update using Online Windows Updates
 
