@@ -83,7 +83,7 @@ RefreshSettings | Apply setting changes
 ResumeUpdate | Continues updates on the next boot
 
 ## Powershell
-Starting with Powershell 5, you are able to install a windows update module from the gallery.
+Starting with **Powershell 5**, you are able to install a windows update module from the gallery.
 ```powershell
 Install-Module PSWindowsUpdate
 Import-Module PSWindowsUpdate
