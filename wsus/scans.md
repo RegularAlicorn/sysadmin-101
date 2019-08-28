@@ -2,7 +2,7 @@
 Scanning for Windows Updates does not scale well with UI interactions. Also sometimes you will need to either fix broken updates, test updates or start updates immediately. The first step is to automate updates with group policies on a bigger scale. For special cases you can use the following tools.
 
 ## Wuauclt.exe
-Windows Update Automatic Update Client (wuauclt) is included up until **Windows 7 and Server 2012R2**. 
+Windows Update Automatic Update Client (_wuauclt_) is included up until **Windows 7 and Server 2012R2**. 
 
 Command | Description
 --------|------------
@@ -68,4 +68,16 @@ Command | Description
   wuauclt.exe /reportnow
   ```
   
-## Usoclient.exe
+## UsoClient.exe
+The _UsoClient_ was newly added with **Windows 10 and Server 2016** and replaces wuauclt.exe completely. Windows 10, Server2016, and newer will have Powershell 5 installed by default. Powershell 5+ is a better way to handle Windows Updates at scale, the _Usoclient_ is for special cases helpful.
+
+_Parameters for the Usoclient neither use dash (-) nor slash (/) as a prefix_
+
+Command | Description
+--------|------------
+StartScan | Scan for available updates, update settings like downloads apply
+StartDownload | Download available updates
+StartInstall | Install available updates
+RestartDevice | Restart computer to finish update installation
+RefreshSettings | Apply setting changes
+ResumeUpdate | Continues updates on the next boot
