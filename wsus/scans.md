@@ -9,12 +9,12 @@ Command | Description
 /DetectNow | Detect available updates, udpate settings like download apply
 /UpdateNow | Install available updates
 /ShowWindowsUpdate | Opens the Windows Update dialog box
-/ResetAuthorization | Deletes current SUS ID (WSUS SID) [Note][1]
+/ResetAuthorization | Deletes current SUS ID (WSUS SID)*
 /SelfUpdateManaged | Scan for available updates using Wsus
 /SelfUpdateUnmanaged | Scan for available update using Online Windows Updates
 
 
-[1]: Possibly also needs 
+* Possibly also needs 
 ```shell
 reg Delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate /v PingID /f 
 reg Delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate /v AccountDomainSid /f 
