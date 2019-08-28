@@ -81,7 +81,7 @@ Get-ItemProperty chrome
 ModuleName | Provider | Description
 -----------|----------|------------
 PSWindowsUpdate | PSGallery | Tools to manage the Windows Update Client
-DSInternals | PSGallery | Exposes internal features of Active Directory (not for production!)
+DSInternals | PSGallery | Exposes internal features of Active Directory (**not for production!**)
 ActiveDirectory | RSAT | Administrative tools for Active Directory
 NTFSSecurity | PSGallery | Manage file and folder security on NTFS volumes
 Pester | PSGallery | Framework for running Tests to validate scripts
