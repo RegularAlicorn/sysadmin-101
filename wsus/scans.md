@@ -81,3 +81,52 @@ StartInstall | Install available updates
 RestartDevice | Restart computer to finish update installation
 RefreshSettings | Apply setting changes
 ResumeUpdate | Continues updates on the next boot
+
+## Powershell
+Starting with Powershell 5, you are able to install a windows update module from the gallery.
+```powershell
+Install-Module PSWindowsUpdate
+Import-Module PSWindowsUpdate
+```
+These Commands can be remotely used with the _-ComputerName_ parameter.
+
+Command | Description
+--------|------------
+Get-WindowsUpdate | Get a list of available updates meeting given criteria
+Get-WUHistory | Get a list of updates history
+Get-WUInstallerStatus | Get Windows Update Installer status
+Get-WURebootStatus (_elevated_) | Get Windows Update reboot status
+Get-WUServiceManager | Get the current Service Manager configuration
+Remove-WindowsUpdate (_elevated_) | Uninstall some windows update
+Update-WUModule | Update the PSWindowsUpdate module
+
+### Examples
+1. Get a list of available updates, download, and install them
+```powershell
+Get-WindowsUpdate -Download -Install
+```
+2. Get a list of updates from a wsus server
+```powershell
+Start-WUScan -SearchCriteria "IsInstalled=0 AND IsHidden=0 AND IsAssigned=1"
+```
+3. Get reboot status
+```powershell
+$status = Get-WURebootStatus
+if(-not ($status.RebootRequired) {
+  Write-Host "Reboot scheduled at $($status.RebotScheduled)"
+} else {
+  Write-Host "No reboot required."
+}
+```
+4. Get default service manager
+```powershell
+Get-WUServiceManager | ?{$_.IsDefaultAUService}
+```
+5. Uninstall a windows update by KB
+```powershell
+Remove-WindowsUpdate -KBArticleID KB958830
+```
+6. Update the PSWindowsUpdate module remotely
+```powershell
+Update-WUModule -ComputerName <ServerName>
+```
