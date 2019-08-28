@@ -112,7 +112,7 @@ Start-WUScan -SearchCriteria "IsInstalled=0 AND IsHidden=0 AND IsAssigned=1"
 3. Get reboot status
 ```powershell
 $status = Get-WURebootStatus
-if(-not ($status.RebootRequired) {
+if($status.RebootRequired) {
   Write-Host "Reboot scheduled at $($status.RebotScheduled)"
 } else {
   Write-Host "No reboot required."
