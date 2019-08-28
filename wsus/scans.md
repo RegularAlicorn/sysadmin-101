@@ -1,7 +1,8 @@
 # Scanning for Updates
+Scanning for Windows Updates does not scale well with UI interactions. Also sometimes you will need to either fix broken updates, test updates or start updates immediately. The first step is to automate updates with group policies on a bigger scale. For special cases you can use the following tools.
 
 ## Wuauclt.exe
-Windows Update Automatic Update Client (wuauclt) is included up until Windows 7 and Server 2012R2. This tool is a commmand utility for windows updates.
+Windows Update Automatic Update Client (wuauclt) is included up until **Windows 7 and Server 2012R2**. 
 
 Command | Description
 --------|------------
