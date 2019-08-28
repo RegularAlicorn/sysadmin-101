@@ -131,3 +131,15 @@ Remove-WindowsUpdate -KBArticleID KB958830
 ```powershell
 Update-WUModule -ComputerName <ServerName>
 ```
+7. Force instant status report to the wsus server
+```powershell
+$session = New-Object -com "Microsoft.Update.Session"
+$session.CreateUpdateSearcher().Search("").Updates
+# Wait for the command to finish
+Start-Sleep -seconds 10
+# trigger reporting
+wuauclt /detectnow
+(New-Object -ComObject Microsoft.Update.AutoUpdate).DetectNow()
+wuauclt /reportnow
+Usoclient StartScan
+```
