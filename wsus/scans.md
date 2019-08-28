@@ -15,7 +15,7 @@ Command | Description
 
 ### Examples
 1. Detect updates and install right away `wuauclt /detectnow /updatenow` 
-2. Report current state to wsus then find new updates 
+2. Report current state to wsus, then find new updates 
   ```shell
   wuauclt /reportnow
   wuauclt /detectnow
