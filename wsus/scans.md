@@ -14,7 +14,7 @@ Command | Description
 /SelfUpdateUnmanaged | Scan for available update using Online Windows Updates
 
 
-* Possibly also needs 
+\* Possibly also needs 
 ```shell
 reg Delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate /v PingID /f 
 reg Delete HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\WindowsUpdate /v AccountDomainSid /f 
