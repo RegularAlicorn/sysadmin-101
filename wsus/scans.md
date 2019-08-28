@@ -71,7 +71,7 @@ Command | Description
 ## UsoClient.exe
 The _UsoClient_ was newly added with **Windows 10 and Server 2016** and replaces wuauclt.exe completely. Windows 10, Server2016, and newer will have Powershell 5 installed by default. Powershell 5+ is a better way to handle Windows Updates at scale, the _Usoclient_ is for special cases helpful.
 
-_Parameters for the Usoclient neither use dash (-) nor slash (/) as a prefix_
+_Parameters for Usoclient neither use dash (-) nor slash (/) as a prefix_
 
 Command | Description
 --------|------------
