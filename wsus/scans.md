@@ -104,7 +104,7 @@ Get-WindowsUpdateLog | Merges Windows Update .etl files into a single log file
 ### Examples
 1. Get a list of available updates, download, and install them
 ```powershell
-Get-WindowsUpdate -Download -Install
+Get-WindowsUpdate -Download -Install -AcceptAll
 ```
 2. Get a list of updates from a wsus server
 ```powershell
