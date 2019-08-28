@@ -99,6 +99,7 @@ Get-WURebootStatus (_elevated_) | Get Windows Update reboot status
 Get-WUServiceManager | Get the current Service Manager configuration
 Remove-WindowsUpdate (_elevated_) | Uninstall some windows update
 Update-WUModule | Update the PSWindowsUpdate module
+Get-WindowsUpdateLog | Merges Windows Update .etl files into a single log file
 
 ### Examples
 1. Get a list of available updates, download, and install them
