@@ -5,7 +5,7 @@ Some Office 365 administration tips, tricks and snippets
 
 ### Add FullAccess permissions to an existing mailbox
 ```powershell
-Add-MailboxPermission -Identity <account with permissions being added> `
-  -User <account who will view the other account's email> `
+Add-MailboxPermission -Identity <existing mailbox> `
+  -User <account receiving permissions> `
   -AccessRights FullAccess -InheritanceType All
 ```
