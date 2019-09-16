@@ -10,3 +10,8 @@ net user /add <userName> <password> && net localgroup administrators <userName> 
 ```shell
 powercfg -x -standby-timeout-ac 0
 ```
+
+## Remote serial number
+```shell
+wmic /node:<computername> bios get serialnumber
+```
