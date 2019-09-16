@@ -28,4 +28,6 @@ Get-EventLog System -Entry Error -New 250 | Out-GridView
 ```
 
 ### Test connection with a specific TCP port
+```powershell
 Test-NetConnection <remote FQDN/IP> -Port 10123 
+```
