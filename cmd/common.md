@@ -18,6 +18,11 @@ NET VIEW /DOMAIN:<Domain> | CLIP
 DRIVERQUERY | CLIP
 ```
 
+### Write console output to file
+```shell
+ipconfig /all > C:\temp\ipconfig.log
+```
+
 ### Get all installed drivers
 ```shell
 DRIVERQUERY
