@@ -26,3 +26,6 @@ Invoke-Command -ComputerName <Host> -ScriptBlock {
 # "ogv" is an alias of Out-GridView
 Get-EventLog System -Entry Error -New 250 | Out-GridView
 ```
+
+## Test connection with a specific TCP port
+Test-NetConnection <remote FQDN/IP> -Port 10123 
