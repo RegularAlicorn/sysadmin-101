@@ -4,7 +4,7 @@ Protocols typically have a known port to work on. This is not enforced and actua
 Optional transport protocol (tcp/udp) in (round brackets)
 
 Port | TCP/UDP | Protocol | Comment
------------------------------------
+---|---|---|---
 7 | TCP/UDP | [Echo](https://en.wikipedia.org/wiki/Echo_Protocol) | .
 9 | UDP | [Wake-on-LAN](https://en.wikipedia.org/wiki/Wake-on-LAN) | Unofficial
 20/21 | TCP (UDP) | [FTP](https://en.wikipedia.org/wiki/File_Transfer_Protocol) | _Unsafe, do not use_
