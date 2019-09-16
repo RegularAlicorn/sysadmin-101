@@ -2,20 +2,16 @@
 
 ## General
 Key combination | Effect
--------------------------
+---|---
 Win + R | Run dialog
 Win + E | New explorer window
 Win + Pause | "System" in control.exe
-
 Win + Shift + S | Screenshot with dragging box into clip.exe
-
 Alt + D | Jump to address bar (Browser & Explorer!)
-
 Ctrl + Shift + Esc | Open Task Manager
 Ctrl + Shift + N | New Folder in Explorer
 Ctrl + Shift + Enter | Run as administrator (search menu or explorer)
 Ctrl + Shift + Left Click | Run as administrator (taskbar pinned items)
-
 Ctrl + Win + D | New virtual Desktop
 Ctrl + Win + Arrow Right | Move one virtual Desktop up
 Ctrl + Win + Arrow Left | Move one virtual Desktop down
@@ -25,7 +21,7 @@ Win + Tab | Virtual Desktop Overview
 This menu is opened with **Win + X** or rightclick on the startmenu button (windows logo).
 While it is open you press the next button from the following table.
 Key | Effect
-----------------
+---|---
 F | Apps and Features
 B | Mobility Center (Presentation Mode!)
 O | Power Options
@@ -54,7 +50,7 @@ These shortcuts need to be executed in the run dialog. Most also work in the sta
 
 ## General
 Name | Application
-------------------
+---|---
 cmd | Command Prompt
 mstsc | Remote Desktop
 shell:startup | Current users autostart folder
@@ -81,7 +77,7 @@ devmgmt.msc | Device Manager
 ## Active Directory
 ".msc" normally is optional; added for good measure.
 Name | Application
------------------
+---|---
 dsa.msc | Users & Computers
 dsa /DOMAIN=<domain name> | DSA connected with given domain
 dsa /SERVER=<dc name> | DSA connectd with given domain controller
