@@ -78,6 +78,7 @@ devmgmt.msc | Device Manager
 
 ## Active Directory
 ".msc" normally is optional; added for good measure.
+
 Name | Application
 ---|---
 dsa.msc | Users & Computers
