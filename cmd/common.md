@@ -11,7 +11,12 @@ net user /add <userName> <password> && net localgroup administrators <userName> 
 powercfg -x -standby-timeout-ac 0
 ```
 
-## Remote serial number
+## (Remote) serial number
 ```shell
 wmic /node:<computername> bios get serialnumber
+```
+```powershell
+Invoke-Command -ComputerName <Host> -ScriptBlock {
+  (Get-CimInstance -ClassName Win32_bios).SerialNumber
+}
 ```
