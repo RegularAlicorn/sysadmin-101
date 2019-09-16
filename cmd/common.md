@@ -1,17 +1,17 @@
 # Common commands
 Some commonly useful commands
 
-## Create local user and add to local administrators in 1 Line
+### Create local user and add to local administrators in 1 Line
 ```shell
 net user /add <userName> <password> && net localgroup administrators <userName> /add
 ```
 
-## Disable sleep mode
+### Disable sleep mode
 ```shell
 powercfg -x -standby-timeout-ac 0
 ```
 
-## (Remote) serial number
+### (Remote) serial number
 ```shell
 wmic /node:<computername> bios get serialnumber
 ```
@@ -21,11 +21,11 @@ Invoke-Command -ComputerName <Host> -ScriptBlock {
 }
 ```
 
-## GridView local events
+### GridView local events
 ```powershell
 # "ogv" is an alias of Out-GridView
 Get-EventLog System -Entry Error -New 250 | Out-GridView
 ```
 
-## Test connection with a specific TCP port
+### Test connection with a specific TCP port
 Test-NetConnection <remote FQDN/IP> -Port 10123 
