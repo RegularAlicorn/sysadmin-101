@@ -13,6 +13,6 @@ Add-MailboxPermission -Identity <existing mailbox> `
 
 ### Start sync
 ```powershell
-Import-Module "C:\Program Files\Microsoft Azure AD Sync\Bin\ADSync\ADSync.psd1"
+Import-Module ADSync
 Start-ADSyncSyncCycle -PolicyType Delta
 ```
