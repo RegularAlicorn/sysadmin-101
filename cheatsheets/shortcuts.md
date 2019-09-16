@@ -6,8 +6,15 @@ Key combination | Effect
 Win + R | Run dialog
 Win + E | New explorer window
 Win + Pause | "System" in control.exe
+Win + Tab | Virtual Desktop Overview
 Win + Shift + S | Screenshot with dragging box into clip.exe
+
+Key combination | Effect
+---|---
 Alt + D | Jump to address bar (Browser & Explorer!)
+
+Key combination | Effect
+---|---
 Ctrl + Shift + Esc | Open Task Manager
 Ctrl + Shift + N | New Folder in Explorer
 Ctrl + Shift + Enter | Run as administrator (search menu or explorer)
@@ -15,7 +22,6 @@ Ctrl + Shift + Left Click | Run as administrator (taskbar pinned items)
 Ctrl + Win + D | New virtual Desktop
 Ctrl + Win + Arrow Right | Move one virtual Desktop up
 Ctrl + Win + Arrow Left | Move one virtual Desktop down
-Win + Tab | Virtual Desktop Overview
 
 ## Poweruser menu
 This menu is opened with **Win + X** or rightclick on the startmenu button (windows logo).
@@ -75,6 +81,9 @@ regedit.exe | Registry Editor
 secpol.msc | Local security policy
 diskmgmt.msc | Disk Management
 devmgmt.msc | Device Manager
+explorer . | Opens explorer at current location
+explorer .\subfolder | Opens explorer at _<subfolder>_ of current location
+start . | Opens a _new_ explorer at current location
 
 ## Active Directory
 ".msc" normally is optional; added for good measure.
