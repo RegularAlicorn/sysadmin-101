@@ -1,6 +1,33 @@
 # Common commands
 Some commonly useful commands
 
+### Add console output to clipboard (for pasting later)
+**CLIP IS ALL CAPS**
+
+#### Multi-Line
+```shell
+CMD | CLIP
+ipconfig /all | CLIP
+exit
+```
+
+#### Single-Line
+```shell
+DIR | CLIP
+NET VIEW /DOMAIN:<Domain> | CLIP
+DRIVERQUERY | CLIP
+```
+
+### Get all installed drivers
+```shell
+DRIVERQUERY
+```
+
+### Get all service states
+```shell
+SC QUERY
+```
+
 ### Create local user and add to local administrators in 1 Line
 ```shell
 net user /add <userName> <password> && net localgroup administrators <userName> /add
