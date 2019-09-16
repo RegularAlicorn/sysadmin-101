@@ -20,3 +20,9 @@ Invoke-Command -ComputerName <Host> -ScriptBlock {
   (Get-CimInstance -ClassName Win32_bios).SerialNumber
 }
 ```
+
+## GridView local events
+```powershell
+# "ogv" is an alias of Out-GridView
+Get-EventLog System -Entry Error -New 250 | Out-GridView
+```
