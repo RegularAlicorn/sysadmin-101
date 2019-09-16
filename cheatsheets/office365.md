@@ -9,3 +9,8 @@ Add-MailboxPermission -Identity <existing mailbox> `
   -User <account receiving permissions> `
   -AccessRights FullAccess -InheritanceType All
 ```
+## Azure AD
+
+### Start sync
+Import-Module "C:\Program Files\Microsoft Azure AD Sync\Bin\ADSync\ADSync.psd1"
+Start-ADSyncSyncCycle -PolicyType Delta
