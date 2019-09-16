@@ -16,3 +16,8 @@ Add-MailboxPermission -Identity <existing mailbox> `
 Import-Module ADSync
 Start-ADSyncSyncCycle -PolicyType Delta
 ```
+
+### Instant object synchronization
+```powershell
+Get-ADDomainController -Filter * | ForEach-Object {Sync-ADObject -Object <object DN> -Source <DC hostname> -Destination $_.name}
+```
