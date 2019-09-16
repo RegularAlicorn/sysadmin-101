@@ -19,7 +19,9 @@ Win + Tab | Virtual Desktop Overview
 
 ## Poweruser menu
 This menu is opened with **Win + X** or rightclick on the startmenu button (windows logo).
+
 While it is open you press the next button from the following table.
+
 Key | Effect
 ---|---
 F | Apps and Features
