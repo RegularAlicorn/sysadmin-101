@@ -52,6 +52,7 @@ Invoke-Command -ComputerName <Host> -ScriptBlock {
 ```powershell
 # "ogv" is an alias of Out-GridView
 Get-EventLog System -Entry Error -New 250 | Out-GridView
+Get-EventLog System -Entry Error -New 250 | ogv
 ```
 
 ### Test connection with a specific TCP port
