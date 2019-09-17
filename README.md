@@ -18,7 +18,7 @@ Use these snips to learn or check on others knowledge as you see fit.
 
 ## Contributing
 
-Please submit pull requests for topic requests, and use issues for typos, errors or additional notes
+Please submit an issue for typos, mistakes or additional notes.
 
 ## License
 
