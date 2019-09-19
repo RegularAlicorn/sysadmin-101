@@ -15,14 +15,14 @@ Logs are written to _Windows Logs\Applications and Services Logs\Microsoft\Windo
 
 Enable tracing in the registry:
 ```shell
-**HKLM\Software\Microsoft\Tracing\WDSMGMT**
-Name: **EnableFileTracing**
-Value type: **REG_DWORD**
-Value data: **1**
-**HKLM\Software\Microsoft\Tracing\WDSMMC**
-Name: **EnableFileTracing**
-Value type: **REG_DWORD**
-Value data: **1**
+HKLM\Software\Microsoft\Tracing\WDSMGMT
+Name: EnableFileTracing
+Value type: REG_DWORD
+Value data: 1
+HKLM\Software\Microsoft\Tracing\WDSMMC
+Name: EnableFileTracing
+Value type: REG_DWORD
+Value data: 1
 ```
 The files will be located in _%windir%\Tracing\wdsmgmt.log_ and _%windir%\Tracing\wdsmmc.log_
 
