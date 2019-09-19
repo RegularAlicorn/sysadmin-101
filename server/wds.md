@@ -2,7 +2,7 @@
 Windows Deployment Services (WDS) combined with Microsoft Deployment Tools (MDT) enables you to deploy client and server installations through network (PXE) with different amount of manual work. 
 
 ## Windows Core
-WDS currently can not be deployed to Windows Server Core.
+WDS currently can **not** be deployed to Windows Server Core.
 
 ## Health Check
 Get (health) information about the current WDS server and log event to Application/System
