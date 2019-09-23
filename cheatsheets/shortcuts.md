@@ -4,8 +4,8 @@
 Key combination | Effect
 ---|---
 Ctrl + F5 | Browser reload with forced cache refresh (no-cache header)
-Ctrl + Tab | Next Browser tab
-Ctrl + Shift + Tab | Next Browser tab (backwards)
+Ctrl + Tab | Next (Browser) tab
+Ctrl + Shift + Tab | Next (Browser) tab - backwards
 
 Key combination | Effect
 ---|---
