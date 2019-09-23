@@ -3,6 +3,12 @@
 ## General
 Key combination | Effect
 ---|---
+Ctrl + F5 | Browser reload with forced cache refresh (no-cache header)
+Ctrl + Tab | Next Browser tab
+Ctrl + Shift + Tab | Next Browser tab (backwards)
+
+Key combination | Effect
+---|---
 Win + R | Run dialog
 Win + E | New explorer window
 Win + Pause | "System" in control.exe
@@ -19,9 +25,11 @@ Ctrl + Shift + Esc | Open Task Manager
 Ctrl + Shift + N | New Folder in Explorer
 Ctrl + Shift + Enter | Run as administrator (search menu or explorer)
 Ctrl + Shift + Left Click | Run as administrator (taskbar pinned items)
+Ctrl + Win + B | Access program that is displaying a message in the notification area
 Ctrl + Win + D | New virtual Desktop
 Ctrl + Win + Arrow Right | Move one virtual Desktop up
 Ctrl + Win + Arrow Left | Move one virtual Desktop down
+Ctrl + Win + Shift + B | Reset graphics driver
 
 ## Poweruser menu
 This menu is opened with **Win + X** or rightclick on the startmenu button (windows logo).
