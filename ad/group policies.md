@@ -21,4 +21,4 @@ Policies are always backwards compatible. In the end policies just offer a human
 Policies - by Microsoft atleast - are never changed. Hence it's always safe to update.
 
 ## Can I manage Firefox with Group Policies?
-Yes. Their GitHub repository contains the current set of policies [github.com/Mozilla](https://github.com/mozilla/policy-templates)
+Yes. Their GitHub repository contains the current set of policies, see [github.com/Mozilla](https://github.com/mozilla/policy-templates)
