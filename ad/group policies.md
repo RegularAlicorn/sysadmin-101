@@ -23,5 +23,11 @@ Policies - by Microsoft atleast - are never changed. Hence it's always safe to u
 ## Can I manage Firefox with Group Policies?
 Yes. Their GitHub repository contains the current set of policies, see [github.com/Mozilla](https://github.com/mozilla/policy-templates)
 
+## Which Policies are currently active for my firefox instance?
+Firefox has a handy URL for this, see [about:policies](about:policies). The "Documentation" Tab contains further explanations and examples for available policies.
+
 ## Can I manage Chrome with Group Policies?
 Yes. Their Help Center contains the link to the current policies, see [Chrome Help Center](https://support.google.com/chrome/a/answer/187202?hl=en)
+
+## Which Policies are currently active for my chrome instance?
+Chrome has a handy URL for this, see [chrome://policy](chrome://policy/). Each Policy entry applies to either "Machine" or "Current user".
