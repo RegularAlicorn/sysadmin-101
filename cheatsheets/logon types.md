@@ -1,7 +1,7 @@
 # Logon Types
 Windows knows different types of authentications, which can be monitored through policies.
 
-If enabled, it will create an system event
+If enabled, it will create an security event
 * Successful: 528, 540
 * Failed: 529 - 537, 539
 
