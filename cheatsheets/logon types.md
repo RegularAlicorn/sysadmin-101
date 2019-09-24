@@ -6,6 +6,7 @@ If enabled, it will create an system event
 * Failed: 529 - 537, 539
 
 The following Logon Types exist and should be understood as different actions:
+
 ID | Name | Description
 ---|------|------------
 2 | Interactive logon | .
