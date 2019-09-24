@@ -9,12 +9,12 @@ The following Logon Types exist and should be understood as different actions:
 
 ID | Name | Description
 ---|------|------------
-2 | Interactive logon | .
-3 | Network logon | .
-4 | Batch logon | .
-5 | Service logon | .
-7 | Unlock | .
-8 | Network clear text logon | .
-9 | New credentials-based logon | .
-10 | Remote interactive logon | .
-11 | Cached Interactive logon | .
+2 | Interactive logon | Local system UI logon or RunAs without /netonly
+3 | Network logon | Remote file share/printer access, non-basic authentication IIS service access
+4 | Batch logon | Console access, the task scheduler uses these
+5 | Service logon | Services and service accounts
+7 | Unlock | Unlocking of a Windows machine
+8 | Network clear text logon | Clear text password network authentication (e.g. basic authentication to an IIS instance)
+9 | New credentials based logon | RunAs /netonly, creates the app with local user identity but network with given (different) credentials
+10 | Remote interactive logon | RDP authentication, e.g. Remote Desktop, Terminal Services, and Remote Assistance
+11 | Cached Interactive logon | logon without DC connection
