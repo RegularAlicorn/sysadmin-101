@@ -43,8 +43,6 @@
   * -n count
   * this is not a "server healthy" check!
 * nslookup
-* Windows subsystem linux
-  * dig
 * protocols
   * tcp
   * udp
