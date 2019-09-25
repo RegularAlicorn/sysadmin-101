@@ -16,7 +16,7 @@ Port | TCP/UDP | Protocol | Comment
 53 | TCP/UDP | [DNS](https://en.wikipedia.org/wiki/Domain_Name_System) | 
 67/68 | UDP | [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol) | 
 80 | TCP | [HTTP](https://en.wikipedia.org/wiki/Hypertext_Transfer_Protocol) | 
-88 | TCP/UDP | [Kerberos](https://en.wikipedia.org/wiki/Kerberos_(protocol)) | Kverberos V5 KDC
+88 | TCP/UDP | [Kerberos](https://en.wikipedia.org/wiki/Kerberos_(protocol)) | Kerberos V5 KDC
 123 | UDP | [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol) | 
 135 | TCP | [RCP Windows]() | 
 137-139 | TCP/UDP | [NetBIOS](https://en.wikipedia.org/wiki/NetBIOS) | 
