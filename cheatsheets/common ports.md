@@ -40,7 +40,25 @@ Port | TCP/UDP | Protocol | Comment
 989 | TCP | [FTPS](https://en.m.wikipedia.org/wiki/FTPS) | FTPS data channel, this is **NOT** [SFTP](https://en.m.wikipedia.org/wiki/SSH_File_Transfer_Protocol)
 990 | TCP | [FTPS](https://en.m.wikipedia.org/wiki/FTPS) | FTPS control channel, this is **NOT** [SFTP](https://en.m.wikipedia.org/wiki/SSH_File_Transfer_Protocol)
 993 | TCP | [IMAPS](https://en.m.wikipedia.org/wiki/Internet_Message_Access_Protocol) | IMAP over TLS
+1433 | TCP/UDP | [MSSQL](https://en.m.wikipedia.org/wiki/Microsoft_SQL_Server) | MSSQL server
+1434 | TCP/UDP | [MSSQL](https://en.m.wikipedia.org/wiki/Microsoft_SQL_Server) | MSSQL monitor
+1512 | TCP/UDP | [WINS](https://en.m.wikipedia.org/wiki/Windows_Internet_Name_Service) | central mapping of NetBIOS names to network adresses
+1812 | TCP/UDP | [RADIUS](https://en.m.wikipedia.org/wiki/RADIUS) | RADIUS authentication protocol
+1813 | TCP/UDP | [RADIUS](https://en.m.wikipedia.org/wiki/RADIUS) | RADIUS accounting protocol
+2049 | TCP | [NFS](https://en.m.wikipedia.org/wiki/Network_File_System) | 
 2105 | TCP | [eklogin](https://web.mit.edu/kerberos/krb5-1.4/krb5-1.4.1/doc/krb5-admin/Configuring-Your-Firewall-to-Work-With-Kerberos-V5.html) | Encrypted Kerberos V5 rlogin
+3020 | TCP | [CIFS](https://en.m.wikipedia.org/wiki/Common_Internet_File_System) | 
+3074 | TCP/UDP | [Games for Windows - Live](https://en.m.wikipedia.org/wiki/Games_for_Windows_%E2%80%93_Live) | _Block this_
+3799 | UDP | [Radius](https://en.m.wikipedia.org/wiki/RADIUS) | RADIUS change of authorization
+5201 | TCP/UDP | [Iperf3](https://software.es.net/iperf/faq.html) | not supported on windows, use iperf2
+6514 | TCP | [Syslog over TLS](https://tools.ietf.org/html/rfc5425?#page-5) | 
+6516 | TCP/UDP | [Windows Admin Center](https://en.m.wikipedia.org/wiki/Windows_Admin_Center) | 
+6771,6881-6999 | TCP/UDP | [BitTorrent](https://en.m.wikipedia.org/wiki/BitTorrent) | _Monitor this_
+8008 | TCP/UDP | [HTTP](https://en.m.wikipedia.org/wiki/HTTP) | Alternative port
+8080 | TCP/UDP | [HTTP](https://en.m.wikipedia.org/wiki/HTTP) | Alternative port
+8332,8333,18333 | TCP/UDP | [BITCOIN](https://bitcoin.org/en/full-node) | _Monitor this_
+9030,9150 | TCP/UDP | [TOR](https://en.m.wikipedia.org/wiki/Tor_(anonymity_network)) | 
+12975,32976 | TCP | [LogMeIn Hamachi](https://en.m.wikipedia.org/wiki/LogMeIn_Hamachi) | _Monitor this_, will fall back to 443 if blocked. Connects to _bibi.hamachi.cc_. Clients receive addresses in _25.0.0.0/8_ (old Version in _5.0.0.0/8_)
 
 ## Windows specific
 There is an extensive [Technet article](https://support.microsoft.com/en-us/help/832017/service-overview-and-network-port-requirements-for-windows) which should be used to gather needed information.
