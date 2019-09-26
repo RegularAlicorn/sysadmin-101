@@ -4,6 +4,7 @@ MDT is a useful tool to deploy systems - virtual and physical - with custom sett
 ## Parameter bootstrap.ini
 The bootstrap.ini is executed during the first PE boot and located in X:\DeploymentShare\Control\Bootstrap.ini.
 
+### Settings table
 Setting | Description
 --------|------------
 Priority | Takes a comma seperated list of jump-to blocks to execute. Default list only contains "Default". Each Block is enclosed in [Brackets]. E.g. **Priority=Brackets,Default**
@@ -14,7 +15,7 @@ UserID | Username for network access to the _DeploymentShare$_, only _Read_ perm
 UserPassword | Userpassword for network access to the _DeploymentShare$, only _Read_ permissions needed. **This password is saved in clear text on the deployment image!** Keep this user as low on permissions as you possibly can! E.g. **UserPassword=P@ssword!**
 UserDomain | Domain for network access user to the _DeploymentShare$_
 
-A simple bootstrap.ini
+### A simple bootstrap.ini
 ```shell
 [Settings]
 Priority=Default
@@ -31,3 +32,14 @@ UserDomain=EXAMPLE
 ## Parameter customSettings.ini
 The customSettings.ini is executed after the bootstrap.ini and located in X:\DeploymentShare\Control\customSettings.ini
 
+### Settings table
+Setting | Description
+--------|------------
+Priority | Takes a comma seperated list of jump-to blocks to execute. Default list only contains "Default". Each Block is enclosed in [Brackets]. E.g. **Priority=Brackets,Default**
+
+### Step configuration / skipping
+#### Local Admin Password
+SkipAdminPassword=YES | Skip local admin password step
+
+
+### A simple customSettings.ini
