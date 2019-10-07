@@ -49,5 +49,5 @@ Create a batch file in _%deploymentroot%/scripts/testIni.bat_
 ```shell
 del C:\MININT\SMSOSD\OSDLOGS\VARIABLES.DAT /q
 cscript ZTIGather.wsf /inifile:..\Control\CustomSettings.ini
-“C:\Program Files (x86)\ConfigMgr 2007 Toolkit V2\Trace32.exe” c:\minint\smsosd\osdlogs\bdd.log
+"C:\Program Files (x86)\ConfigMgr 2007 Toolkit V2\Trace32.exe" c:\minint\smsosd\osdlogs\bdd.log
 ```
