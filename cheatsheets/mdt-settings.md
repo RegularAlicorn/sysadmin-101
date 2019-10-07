@@ -41,7 +41,6 @@ Priority | Takes a comma seperated list of jump-to blocks to execute. Default li
 #### Local Admin Password
 SkipAdminPassword=YES | Skip local admin password step
 
-
 ### A simple customSettings.ini
 
 ## Test customSettings.ini
@@ -51,3 +50,13 @@ del C:\MININT\SMSOSD\OSDLOGS\VARIABLES.DAT /q
 cscript ZTIGather.wsf /inifile:..\Control\CustomSettings.ini
 "C:\Program Files (x86)\ConfigMgr 2007 Toolkit V2\Trace32.exe" c:\minint\smsosd\osdlogs\bdd.log
 ```
+
+## Naming your new machine
+To name a new machine, you can use the variables. Examples taken from _C:\MININT\SMSOSD\OSDLOGS\variables.dat_ are below.
+
+* %Architecture% - **X64/x86**
+* %SerialNumber%
+* %Make% - **manufacturer**
+* %Model%
+* %Product%
+* %AssetTag%
