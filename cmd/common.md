@@ -64,3 +64,11 @@ Get-EventLog System -Entry Error -New 250 | ogv
 ```powershell
 Test-NetConnection <remote FQDN/IP> -Port 10123 
 ```
+
+### Restricted Explorer
+```shell
+REM open in current directory
+hh.exe /?
+REM open in given directory
+hh.exe C:\
+```
