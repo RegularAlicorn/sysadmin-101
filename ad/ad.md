@@ -32,7 +32,7 @@ nslookup -querytpye=srv _gc._tcp.example.com
 Refresh AD groups membership without user logoff for Kerberos authentication. NTLM authentication requires logoff and logon.
 
 ```shell
-# see current grou memberships
+# see current group memberships
 whoami /groups
 
 # reset local system computer AD membership, elevated console needed
