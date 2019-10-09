@@ -27,3 +27,25 @@ Global catalogs are important pieces within the domain controller infrastructure
 ```shell
 nslookup -querytpye=srv _gc._tcp.example.com
 ```
+
+## Kerberos Tickets
+Refresh AD groups membership without user logoff for Kerberos authentication. NTLM authentication requires logoff and logon.
+
+```shell
+REM see current grou memberships
+whoami /groups
+
+REM reset local system computer AD membership, elevated console needed
+REM is the identifier for the local computer session
+klist -lh 0 -li 0x3e7 purge
+
+REM Update policices
+gpupdate /force
+
+REM reset user ticket
+klist purge
+
+REM check TGT ticket for creation time
+REM you will need to connect to a network resource through FQDN to have it created after a purge
+klist tgt
+```
