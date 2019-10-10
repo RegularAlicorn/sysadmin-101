@@ -72,3 +72,8 @@ hh.exe /?
 REM open in given directory
 hh.exe C:\
 ```
+
+### List service authentication accounts
+```powershell
+Get-WmiObject -Class Win32_Service -ComputerName $computerName | Select DisplayName, StartName, State
+```
