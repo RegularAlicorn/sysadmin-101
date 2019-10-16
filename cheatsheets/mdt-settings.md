@@ -42,6 +42,47 @@ Priority | Takes a comma seperated list of jump-to blocks to execute. Default li
 SkipAdminPassword=YES | Skip local admin password step
 
 ### A simple customSettings.ini
+```
+[Settings]
+Priority=General,Domain,User,Default
+Properties=MyCustomProperty
+
+[General]
+SkipBDDWelcome=YES
+USMTOfflineMigration=FALSE
+SkipBitLocker=YES
+SkipProductKey=YES
+
+[Domain]
+JoinDomain=<DOMAIN>
+MachineObjectOU=<DN OF OU FOR NEW COMPUTER OBJECT>
+DomainAdmin=<USER ADDING COMPUTER TO DOMAIN>
+DomainAdminPassword=<PASSWORD>
+DomainAdminDomain=<NETBIOS DOMAIN>
+SkipDomainMembership=YES
+SkipComputerName=YES
+
+[User]
+SkipUserData=YES
+SkipAdminPassword=YES
+
+SkipLocaleSelection=YES
+UILanguage=<INPUT LOCALE STRING IDENTIFIER, e.g. en-US>
+UserLocale=<INPUT LOCALE STRING IDENTIFIER>
+InputLocale=<INPUT LOCALE STRING IDENTIFIER>;<INPUT LOCALE IDENTIFIER (NUMBERS)>
+
+SkipTimeZone=YES
+TimeZoneName=<TIMEZONE STRING IDENTIFIER>
+
+[Default]
+OSInstall=Y
+SkipTaskSequence=YES
+TaskSequenceID=<TASK SEQUENCE ID>
+SkipSummary=YES
+SkipFinalSummary=YES
+FinishAction=REBOOT
+WSUSServer=http://<WSUS SERVER>.example.com:8530
+```
 
 ## Test customSettings.ini
 Create a batch file in _%deploymentroot%/scripts/testIni.bat_
