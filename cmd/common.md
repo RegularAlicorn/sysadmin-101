@@ -77,3 +77,17 @@ hh.exe C:\
 ```powershell
 Get-WmiObject -Class Win32_Service -ComputerName $computerName | Select DisplayName, StartName, State
 ```
+
+## From-Anywhere©
+
+### Access Remote Computermanagement From-Anywhere
+Create a new file _"mg.cmd"_ in _%windir%
+```shell
+start compmgmt.msc /computer=%1
+```
+
+### Start mstsc to a specific server From-Anywhere
+Create a new file _"m.cmd"_ in _%windir%
+```shell
+mstsc /v:%1
+```
