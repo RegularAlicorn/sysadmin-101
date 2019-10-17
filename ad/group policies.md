@@ -31,3 +31,19 @@ Yes. Their Help Center contains the link to the current policies, see [Chrome He
 
 ## Which Policies are currently active for my chrome instance?
 Chrome has a handy URL for this, open **chrome://policy/**. Each Policy entry applies to either "Machine" or "Current user".
+
+## To manage office addins, I need the ProgID of those. How do I get it?
+Use PowerShell on a system with the addin installed
+```powershell
+# Excel
+(New-Object -com Excel.Application).Comaddins
+(New-Object -com Excel.Application).Addins
+ 
+# Word
+(New-Object -com Word.Application).Comaddins
+(New-Object -com Word.Application).Addins
+ 
+# Outlook
+(New-Object -com Outlook.Application).Comaddins
+(New-Object -com Outlook.Application).Addins
+```
