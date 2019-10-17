@@ -92,3 +92,10 @@ Create a new file _"m.cmd"_ in _%windir%
 ```shell
 mstsc /v:%1
 ```
+
+## WSL (Windows Subsystem for Linux)
+### Display weather info
+```shell
+curl wttr.in
+curl wttr.in/<city>
+```
