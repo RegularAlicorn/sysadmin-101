@@ -79,6 +79,7 @@ Get-WmiObject -Class Win32_Service -ComputerName $computerName | Select DisplayN
 ```
 
 ## From-Anywhere©
+Shortcuts to specific tasks from search menu, explorer and run dialog.
 
 ### Access Remote Computermanagement From-Anywhere
 Create a new file _"mg.cmd"_ in _%windir%
