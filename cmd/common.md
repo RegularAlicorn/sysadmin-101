@@ -78,6 +78,32 @@ hh.exe C:\
 Get-WmiObject -Class Win32_Service -ComputerName $computerName | Select DisplayName, StartName, State
 ```
 
+### Create a shortcut with powershell
+```powershell
+# Define shortcut name
+$lnkPath = "C:\Temp\file-name.lnk"
+
+# wscript object
+$wshShell = New-Object -comObject WScript.Shell
+
+# create the shortcut object
+$shortcut = $wshShell.CreateShortcut($lnkPath)
+
+# set target (e.g. executed program)
+$shortcut.TargetPath = "C:\Windows\System32\cmd.exe"
+# arguments can't be space seperated to the TargetPath
+$shortcut.Arguments = "/c `"ping 1.1.1.1 -n 15`""
+# sets icon to given index in given file (exe, dll, ..)
+$shortcut.IconLocation = "%SystemRoot%\System32\imageres.dll,1"
+$shortcut.WorkingDirectory = "C:\Temp\"
+$shortcut.Save()
+
+# Set "Run as Administrator" Flag
+$bytes = [System.IO.File]::ReadAllBytes($lnkPath)
+$bytes[0x15] = $bytes[0x15] -bor 0x20 # sets byte 21 (0x15) bit 6 (0x20) TRUE
+[System.IO.File]::WriteAllBytes($lnkPath, $bytes)
+```
+
 ## From-Anywhere©
 Shortcuts to specific tasks from search menu, explorer and run dialog.
 
