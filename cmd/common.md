@@ -33,6 +33,18 @@ DRIVERQUERY
 SC QUERY
 ```
 
+### Logoff CLI
+Logoff current account
+```shell
+logoff
+```
+
+Logoff different account
+```shell
+query user
+logoff <ID>
+```
+
 ### Create local user and add to local administrators in 1 Line
 ```shell
 net user /add <userName> <password> && net localgroup administrators <userName> /add
