@@ -181,6 +181,38 @@ top -u <username>
 top -i
 ```
 
+### User
+**List all local users**
+```bash
+cut -d : -f 1 /etc/passwd
+```
+**Create a new user**
+```bash
+sudo adduser new_username
+```
+**Delete a user**
+```bash
+# remove the user object
+sudo userdel username
+# remove the home directory
+sudo rm -r /home/username
+```
+**Modify a user**
+```bash
+# Modifiy usename
+usermod -l new_username old_username
+# Modify password
+sudo passwd username
+# Modify shell
+sudo chsh username
+# Modify details
+sudo chfn username
+# Add to <sudo> group
+adduser username sudo
+# Alternative add to <sudo> group
+usermod -aG sudo username
+```
+
 ## Ubuntu
 These commands at least work on Ubuntu.
 
