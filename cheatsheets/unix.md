@@ -188,29 +188,33 @@ cut -d : -f 1 /etc/passwd
 ```
 **Create a new user**
 ```bash
-sudo adduser new_username
+sudo adduser <new_username>
 ```
 **Delete a user**
 ```bash
 # remove the user object
-sudo userdel username
+sudo userdel <username>
 # remove the home directory
-sudo rm -r /home/username
+sudo rm -r /home/<username>
 ```
 **Modify a user**
 ```bash
-# Modifiy usename
-usermod -l new_username old_username
+# Modifiy username
+usermod -l <new_username> <old_username>
 # Modify password
-sudo passwd username
+sudo passwd <username>
 # Modify shell
-sudo chsh username
+sudo chsh <username>
 # Modify details
-sudo chfn username
+sudo chfn <username>
 # Add to <sudo> group
 adduser username sudo
 # Alternative add to <sudo> group
 usermod -aG sudo username
+```
+**List group members**
+```bash
+getent group <groupname>
 ```
 
 ## Ubuntu
