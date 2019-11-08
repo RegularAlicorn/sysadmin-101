@@ -215,6 +215,7 @@ usermod -aG sudo username
 **List group members**
 ```bash
 getent group <groupname>
+getent group <groupname> | awk -F: '{print $4}'
 ```
 
 ## Ubuntu
