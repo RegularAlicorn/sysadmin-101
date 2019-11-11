@@ -2,7 +2,7 @@
 
 Sysadmin 101 knowledge collection, still lots and lots to write.
 
-**This collection is for windows heavy shops**
+**This collection is for Microsoft heavy shops**
 
 ## Getting Started
 
