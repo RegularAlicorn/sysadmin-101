@@ -49,3 +49,11 @@ klist purge
 # you will need to connect to a network resource through FQDN to have it created after a purge
 klist tgt
 ```
+
+## Security
+
+### ACLs
+Grant Read-Write permissions for given account to itself on the attribute "servicePrincipalName"
+```powershell
+dsacls <Account DN> /G SELF:RPWP;"servicePrincipalName" 
+```
