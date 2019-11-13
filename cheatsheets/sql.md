@@ -3,6 +3,8 @@
 ## MSSQL
 
 ### “The target principal name is incorrect.  Cannot generate SSPI context.”
+[More information in this Microsoft Support Article]{https://support.microsoft.com/en-us/help/811889/how-to-troubleshoot-the-cannot-generate-sspi-context-error-message}
+
 This issue might occur if you use the NT-System\Networkservice account to run the database server service without a domain administrator account (this is a good thing!).
 
 The error message in the log reads like this:
@@ -20,4 +22,9 @@ dsacls <Service Account DN> /G SELF:RPWP;"servicePrincipalName"
 If it worked, the new log entry reads like this:
 ```
 The SQL Server Network Interface library successfully registered the Service Principal Name (SPN) [ MSSQLSvc/servername.domainname.net:1433 ] for the SQL Server service.
+```
+
+There might a an issue with SPN registration, you can output all active SPN s with this command
+```powershell
+Get-ADUser -filter * -Properties servicePrincipalName | ?{$_.servicePrincipalName -ne ""}
 ```
