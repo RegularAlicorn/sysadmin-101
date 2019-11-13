@@ -24,7 +24,7 @@ If it worked, the new log entry reads like this:
 The SQL Server Network Interface library successfully registered the Service Principal Name (SPN) [ MSSQLSvc/servername.domainname.net:1433 ] for the SQL Server service.
 ```
 
-There might be an issue with SPN registration, you can output all active SPNs with this command to check for existing SPNs - dublicate? - or missing SPNs.
+There might be an issue with SPN registration, you can output all active SPNs with this command to check for existing SPNs - dublicate? - or missing SPNs. This only checks user accounts, computer objects tend to have important SPNs aswell, but are much more verbose, because they always get their own object added in multiple variants.
 ```powershell
 Get-ADUser -filter * -Properties servicePrincipalName | ?{$_.servicePrincipalName -ne ""}
 ```
