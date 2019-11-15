@@ -62,7 +62,7 @@ Typical SQL storage recommendations
 
 SQL | RAID-Level
 ----|-----------
-OS/Binaries | RAID-1/5 fault tolerance
+OS/Binaries | RAID-1 or RAID-5 for fault tolerance
 Data/Indices | RAID-1+0 (RAID-5 for budget reasons)
 Logs | RAID-1+0
 TempDB | Raid-1+0
