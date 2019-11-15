@@ -58,8 +58,11 @@ RAID Level | Fault Tolerance | Read Performance | Write Performance | Cost-Effic
 6 | Excellent | Good | Lower than 5 | Worse than 5 | 4 (2)
 1+0 | Excellent | Optimal | Optimal | Low | 4 (up to 2)
 
+## Fileserver Storage
+Dependant on speed, size and fault tolerance requirements, you need to analyze and decide what you need. Typically for "normal" sizes (far below petabyte size) either **RAID-5/RAID-6** for fault tolerance or **RAID-50/RAID-60** for fault tolerance with increased random writing speed is sufficent. RAID-6 replaces RAID-5 for higher data loss prevention at a higher cost.
+
 ## SQL Storage
-Typical SQL storage recommendations
+A typical SQL storage recommendation
 
 SQL | RAID-Level
 ----|-----------
