@@ -3,7 +3,9 @@ Disk RAIDS circumvent certian aspects of single disk uses. In all cases they imp
 
 ## Raid 0
 Improves single disk performance through striping. IO operations are spread accross multiple disks.
+
 :heavy_plus_sign: blazing fast writing
+
 :heavy_minus_sign: no fault tolerance what-so-ever. Single disk failure permanently brings down the whole array!
 
 ## Overview
