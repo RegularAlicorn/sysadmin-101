@@ -50,7 +50,7 @@ Combines RAID-1 and RAID-0 by combining multiple mirroring RAID-1 pairs into a s
 * perfect writing speed takes a hit from mirroring task
 
 ## Overview
-RAID Level | Fault Tolerance | Read Performance | Write Performance | Cost-Efficency | Minimum amount of disks (fault tolerance in disks)
+RAID Level | Fault Tolerance | Read Performance | Write Performance | Cost-Efficency | Minimum amount of disks       (fault tolerance in disks)
 -----------|-----------------|------------------|-------------------|----------------|------------------------
 0 | None | Good | Optimal | Optimal | 2  (0)
 1 | Good | Good | Good | Decent | 2 (1)
