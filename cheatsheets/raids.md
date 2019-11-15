@@ -59,6 +59,7 @@ RAID Level | Fault Tolerance | Read Performance | Write Performance | Cost-Effic
 
 ## SQL Storage
 Typical SQL storage recommendations
+
 SQL | RAID-Level
 ----|-----------
 OS/Binaries | RAID-1/5 fault tolerance
