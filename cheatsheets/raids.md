@@ -28,12 +28,16 @@ Uses striping like RAID-0 with parity fault tolerance. Parity is used to recover
 :heavy_plus_sign: 
 * tolerates single disk failure
 * parity uses less space than mirroring
+* still good sequential writing performance
 
 :heavy_minus_sign: 
-* parity is an expensive operation for writing operations (~4 times higher)
+* parity is an expensive operation for random writing operations
+
+## RAID-6
+Variant of RAID-5 resisting 2 concurrent disk failures. Writes each parity block twice thus increases write penalty respective to RAID-5.
 
 ## RAID-1+0 / RAID-10
-Combines RAID-1 and RAID-0 by combining multiple mirroring pairs into a RAID-0. This combination offers optimal writing speed through RAID-0 while maintaining single disk faults (for each pair!). Writing is much faster than RAID-5 due to the fact that there is no parity data involved.
+Combines RAID-1 and RAID-0 by combining multiple mirroring RAID-1 pairs into a single RAID-0. This combination offers optimal writing speed through RAID-0 while maintaining single disk faults (for each pair!). Writing is much faster than RAID-5 due to the fact that there is no parity data involved.
 
 :heavy_plus_sign: 
 * very fast writing speed
@@ -52,4 +56,13 @@ RAID Level | Fault Tolerance | Read Performance | Write Performance | Cost-Effic
 5 | Decent | Good | Low | Good
 6 | Better than 5 | Good | Lower than 5 | Better than 5
 1+0 | Excellent | Optimal | Optimal | Low
-DP | Good | Good | Bad | Good
+
+## SQL Storage
+Typical SQL storage recommendations
+SQL | RAID-Level
+----|-----------
+OS/Binaries | RAID-1/5 fault tolerance
+Data/Indices | RAID-1+0 (RAID-5 for budget reasons)
+Logs | RAID-1+0
+TempDB | Raid-1+0
+Backups | RAID-5
