@@ -22,6 +22,16 @@ Improves fault tolerance by dublicating each disk onto a mirror disk. If one fai
 * halfes usable space
 * writing penalty, each write has to be done twice
 
+## RAID-5
+Uses striping like RAID-0 with parity fault tolerance. Parity is used to recover lost data of a faulty disk within the array.
+
+:heavy_plus_sign: 
+* tolerates single disk failure
+* parity uses less space than mirroring
+
+:heavy_minus_sign: 
+* parity is an expensive operation for writing operations (~4 times higher)
+
 ## Overview
 RAID Level | Fault Tolerance | Read Performance | Write Performance | Cost-Efficency
 -----------|-----------------|------------------|-------------------|---------------
