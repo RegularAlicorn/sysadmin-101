@@ -32,6 +32,18 @@ Uses striping like RAID-0 with parity fault tolerance. Parity is used to recover
 :heavy_minus_sign: 
 * parity is an expensive operation for writing operations (~4 times higher)
 
+## RAID-1+0 / RAID-10
+Combines RAID-1 and RAID-0 by combining multiple mirroring pairs into a RAID-0. This combination offers optimal writing speed through RAID-0 while maintaining single disk faults (for each pair!). Writing is much faster than RAID-5 due to the fact that there is no parity data involved.
+
+:heavy_plus_sign: 
+* very fast writing speed
+* fast reading speed
+* single disk fault tolerance per pair (up to half of total disks in use)
+
+:heavy_minus_sign: 
+* halfes disk space available (mirror disks)
+* perfect writing speed takes a hit from mirroring task
+
 ## Overview
 RAID Level | Fault Tolerance | Read Performance | Write Performance | Cost-Efficency
 -----------|-----------------|------------------|-------------------|---------------
