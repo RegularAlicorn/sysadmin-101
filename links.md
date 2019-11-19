@@ -20,8 +20,26 @@ Common resources, useful information, places to learn and look-up documentations
 * (https://attack.mitre.org/)
   
   Huge amount of attack vector information. Use this to get to know your weak spots or places to start looking.
+* (https://haveibeenpwned.com/Passwords)
+  
+  Check if your emails and passwords are in contained in public data leaks. Also get automatic notifications if accounts of your domain are within a new leak (you need to own the domain for this)
+* (https://support.google.com/chrome/a/answer/187202?hl=en)
+  
+  Google Chrome GPO Templates
+* (https://github.com/mozilla/policy-templates/releases)
+  
+  Mozilla Firefox GPO Templates
 
 ## Tools
+* (https://www.virustotal.com/gui/home/upload)
+  
+  Check Files and URLs for malicious intend before opening them. This site uses multiple anti-malware software checks to get a result. There is an API to use automated tools.
+* (https://decentsecurity.com/)
+  
+  Good security information, seems no longer maintained
+* (http://correcthorsebatterystaple.net/)
+  
+  Generates passwords in the [XKCD style](http://xkcd.com/936/)
 * (https://mxtoolbox.com/SuperTool.aspx)
   
   Check your MX records, DNS, blacklist lookup and SMTP diagnostics
@@ -43,6 +61,10 @@ Common resources, useful information, places to learn and look-up documentations
   
   Learn PowerShell with hands on question in the [kōan style](https://en.wikipedia.org/wiki/K%C5%8Dan)
 
+* (https://phishingquiz.withgoogle.com/?hl=en)
+  
+  Google phishing quiz for users (and admins!). The self-evaluation expects self-reflection skills.
+
 ## Microsoft
 Microsoft System related Links
 
@@ -62,6 +84,9 @@ Microsoft System related Links
 * (https://aka.ms/WEF)
   
   Massive information collection for Windows event Forwarding. Consider implementing this!
+* (https://support.microsoft.com/en-us/help/832017/service-overview-and-network-port-requirements-for-windows)
+  
+  Massive amount of information of Windows service and network port requirements
 
 ### Active Directory
 **AD Guides**
