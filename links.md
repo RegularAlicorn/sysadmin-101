@@ -17,6 +17,9 @@ Common resources, useful information, places to learn and look-up documentations
 * (https://whois.domaintools.com/)
   
   Whois Lookup, useful to get (legitimate) owner information 
+* (https://attack.mitre.org/)
+  
+  Huge amount of attack vector information. Use this to get to know your weak spots or places to start looking.
 
 ## Tools
 * (https://mxtoolbox.com/SuperTool.aspx)
@@ -35,10 +38,33 @@ Common resources, useful information, places to learn and look-up documentations
   
   BGP Monitor alerting hijacks, leaks and outages in the Border Gateway Protocol
 
+## Guides
+* (http://aka.ms/pskoans)
+  
+  Learn PowerShell with hands on question in the [kōan style](https://en.wikipedia.org/wiki/K%C5%8Dan)
+
 ## Microsoft
+Microsoft System related Links
+
+### Security
+* (http://aka.ms/privsec)
+  
+  Securing privileged access
+* (https://aka.ms/PowerShellCorpus)
+  
+  OneDrive Link to a PowerShell tool for detecting obfuscated PowerShell commands and scripts at scale. Check out their [GitHub Rep](https://github.com/danielbohannon/Revoke-Obfuscation)
+* (http://aka.ms/LAPS)
+
+  LAPS solution download
+* (http://aka.ms/JEA)
+  
+  Just Enough Administration, PowerShell security technology system
+* (https://aka.ms/WEF)
+  
+  Massive information collection for Windows event Forwarding. Consider implementing this!
 
 ### Active Directory
-**Guides**
+**AD Guides**
 * (https://gallery.technet.microsoft.com/Step-by-Step-Deploy-Local-7c9ef772)
   
   Step by Step deploy Microsoft LAPS solution
@@ -58,22 +84,31 @@ Common resources, useful information, places to learn and look-up documentations
   
   Active Directory Certificate Services Migration
 
-**Look-up**
+**AD Look-up**
 * (https://support.microsoft.com/en-us/help/243330/well-known-security-identifiers-in-windows-operating-systems)
 
   Well-known security identifiers list
 
-**Tools**
+**AD Tools**
 * (http://www.cjwdev.com/Software.html?LMCL=PbAXdB)
 
   (Older) AD management software collection, useful in specific cases
   
-**Templates**
+**AD Templates**
 * (https://www.microsoft.com/en-us/download/100591)
 
   Administrative Templates (.admx) for Windows 10 November 2019 Update (1909)
   
-### Security
+#### AD Security
+* (http://aka.ms/HardenAD)
+  
+  Reducing the Active Directory Attack Surface
+* (http://aka.ms/tiermodel)
+  
+  Active Directory administrative tier model for improved administrative protection
+* (http://aka.ms/CyberPAW)
+
+  Massive Privileged Access Workstations information. For most systems, just take ideas from this
 * [Security Baseline Win10 1903/Server 1903](https://blogs.technet.microsoft.com/secguide/2019/05/23/security-baseline-final-for-windows-10-v1903-and-windows-server-v1903/)
 * [Security Baseline Office 2016/Office 365 ProPlus apps](https://blogs.technet.microsoft.com/secguide/2018/02/13/security-baseline-for-office-2016-and-office-365-proplus-apps-final/)
 
