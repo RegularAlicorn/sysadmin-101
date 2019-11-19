@@ -23,3 +23,8 @@ Try ``netstat -f`` to get a full qualified domainname or ``netstat -f -b`` to ev
 
 ## Why is it sorted by state?
 Just use ``netstat -n`` if you don't like it.
+
+## Can I check a specific port for listening processes with PowerShell?
+```powershell
+Get-Process -Id (Get-NetTCPConnection -LocalPort <PortNumber>).OwningProcess
+```
