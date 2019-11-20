@@ -4,9 +4,11 @@
 ```xml
 <QueryList>
   <Query Id="0" Path="Security">
-    <Select Path="Security">
-  *[System[(EventID=’4624′)]]
-	*[EventData[Data[@Name='TargetUserName'] and (Data='<Username>')]]</Select>
+    	<Select Path="Security">
+  		*[System[(EventID=’4624′)]]
+	    	and
+		*[EventData[Data[@Name='TargetUserName'] and (Data='<Username>')]]
+	</Select>
   </Query>
 </QueryList>
 ```
