@@ -13,12 +13,12 @@
 Window environment variables can be accessed through a Powershell Drive _env:_. You can jump into this drive like in any other drive with `cd env:` and display its contents with `ls` or `dir`.
 
 ### Get
-**List all variables** `Get-ChildItem env:`
-**Value of path variable** `Get-ChildItem env:Path` _OR_ `$env:Path`
-**Temp locaion** `Get-ChildItem env:TEMP` _OR_ `$env:TEMP`
-**COmputername** `Get-ChildItem env:COMPUTERNAME` _OR_ `$env:COMPUTERNAME`
-**Username** `Get-ChildItem env:USERNAME` _OR_ `$env:USERNAME`
-**Userdomain** `Get-ChildItem env:USERDOMAIN` _OR_ `$env:USERDOMAIN`
+* **List all variables** `Get-ChildItem env:`
+* **Value of path variable** `Get-ChildItem env:Path` _OR_ `$env:Path`
+* **Temp locaion** `Get-ChildItem env:TEMP` _OR_ `$env:TEMP`
+* **COmputername** `Get-ChildItem env:COMPUTERNAME` _OR_ `$env:COMPUTERNAME`
+* **Username** `Get-ChildItem env:USERNAME` _OR_ `$env:USERNAME`
+* **Userdomain** `Get-ChildItem env:USERDOMAIN` _OR_ `$env:USERDOMAIN`
 
 #### Examples
 * Walk all Path entries and find java (which has its own `$env:` entry!)
