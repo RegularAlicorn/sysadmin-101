@@ -164,6 +164,21 @@ Get-ADObject -Filter {IsDeleted -eq $True -and Name -notlike "test*"} -IncludeDe
 # Restore some deleted user object
 Get-ADObject -Filter 'samaccountname -eq "MrFantastic"' -IncludeDeletedObjects | Restore-ADObject
 ```
+
+## Test File Creation
+Create a Test File with specified size - filled with _NULL_ value.
+```powershell
+$file = New-Object System.IO.FileStream '<Path to File>', Create, ReadWrite
+$file.SetLength(100MB)
+$file.Close()
+```
+
+## Parse Number
+```powershell
+$numString = "1.2345678910"
+$num = [double]::Parse($numString)
+```
+
 ## Looping
 Given a dataset _$data_ of values
 
