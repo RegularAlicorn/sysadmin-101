@@ -15,3 +15,13 @@ Some typical places to look at are:
 7. Windows Search Database "C:\ProgramData\Microsoft\Search\Data\Applications\Windows"
 8. IIS Logs
     * You can find the correct directory in the IIS management->Logging Menu
+9. Connection errors, these sometimes are difficult to debug
+    * ```ipconfig /all``` for current configuration(-mistakes)
+    * ```ping``` for connectivity
+    * ```nslookup <remote name>``` for name resolving
+    * Firewall logs for blocked connections
+    * Check/Change physical patch cable(s), these produce weird errors if broken
+10. DNS Logs "C:\Windows\System32\dns"
+    * Check this [Technet Guide](https://blogs.technet.microsoft.com/secadv/2018/01/22/parsing-dns-server-log-to-track-active-clients/)
+11. DFSR, DHCP and other AD related logs "C:\Windows\debug\"
+12. DHCP Logs "C:\Windows\System32\dhcp"
