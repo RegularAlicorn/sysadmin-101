@@ -3,7 +3,7 @@
 ## MSSQL
 
 ### “The target principal name is incorrect.  Cannot generate SSPI context.”
-[More information in this Microsoft Support Article]{https://support.microsoft.com/en-us/help/811889/how-to-troubleshoot-the-cannot-generate-sspi-context-error-message}
+[More information in this Microsoft Support Article](https://support.microsoft.com/en-us/help/811889/how-to-troubleshoot-the-cannot-generate-sspi-context-error-message)
 
 This issue might occur if you use the NT-System\Networkservice account to run the database server service without a domain administrator account (this is a good thing!).
 
