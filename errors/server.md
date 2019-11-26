@@ -21,3 +21,5 @@ Some typical places to look at are:
     * You will have to turn this on (and should!). Defender Advanced Security -> Firewall-Properties -> Logging -> Turn on for all profiles
   
 7. Windows Search Database "C:\ProgramData\Microsoft\Search\Data\Applications\Windows"
+8. IIS Logging
+    * You can find the correct directory in the IIS management->Logging Menu
