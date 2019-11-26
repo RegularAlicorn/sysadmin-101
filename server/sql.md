@@ -28,3 +28,10 @@ There might be an issue with SPN registration, you can output all active SPNs wi
 ```powershell
 Get-ADUser -filter * -Properties servicePrincipalName | ?{$_.servicePrincipalName -ne ""}
 ```
+### Update SPN Entry
+To update the entry - if not automatically happening - use this command on the SQL server and restart the service afterwards.
+```shell
+setspn -l <servername>
+setspn -A MSSQLSvc/<servername>:1433 Domain\Account
+setspn -A MSSQLSvc/<servername>:<instance name> Domain\Account
+```
