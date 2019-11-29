@@ -72,3 +72,11 @@ Questions to answer in a new system - or keep track of in a known system. Possib
     * Are there any additional services on (any) Domain Controller
 2. What is the ratio of Windows / Linux / Mac / Other in usage (Client / Server)
     * Are there people who specialize in these OS
+3. Email
+    * What is the mail component topology (provider, server, spam/malware filter, archive, ...)
+    * Is there a MST supporting it
+4. How is filesharing handled
+    * Is there an internal fileserver
+    * Are files in the cloud (which)
+    * Are there permission policies applied (at least for crypto prevention)
+    * Does C-Level demand default access to everything all the time
