@@ -2,33 +2,33 @@
 Questions to answer in a new system - or keep track of in a known system. Possibly questions to ask in an interview.
 
 1. Backups 
-  * What backup software is in Use
-  * What backup schedule is in place
-  * What backup retention policy is in place
-  * How often are backups tested
+   * What backup software is in Use
+   * What backup schedule is in place
+   * What backup retention policy is in place
+   * How often are backups tested
 
 2. On-call
-  * How does the on-call rotation schedule work
-  * Are there statistics for how often on-call is contacted
-  * Is there an escalation procedure
+   * How does the on-call rotation schedule work
+   * Are there statistics for how often on-call is contacted
+   * Is there an escalation procedure
 
 3. Silos
-  * What are the primary roles and responsibilities of my team members
-  * What are their specific specializations
-  * Is there a backup person for every task
+   * What are the primary roles and responsibilities of my team members
+   * What are their specific specializations
+   * Is there a backup person for every task
 
 4. Passwords
-  * What is used for password management
-  * What is the password policy for administrative passwords
-  * Is there password management for users
+   * What is used for password management
+   * What is the password policy for administrative passwords
+   * Is there password management for users
 
 5. DNS
-  * How is DNS setup
-  * Who is the external DNS provider
-  * Who do I talk to if there is a DNS problem (internal / external)
+   * How is DNS setup
+   * Who is the external DNS provider
+   * Who do I talk to if there is a DNS problem (internal / external)
 
 6. Is there an internal CA
-  * Is the Root CA offline
+   * Is the Root CA offline
 
 7. What is used for IPAM
 
@@ -43,41 +43,41 @@ Questions to answer in a new system - or keep track of in a known system. Possib
 12. How are maintenance contract renewals tracked
 
 13. Give me an overview of the ORG chart
-  * Who is IT reporting to (CFO? No thank you.)
+   * Who is IT reporting to (CFO? No thank you.)
 
 14. What is the on-boarding / off-boarding process
-  * How much of these is automated
-  * How many people are involved
+   * How much of these is automated
+   * How many people are involved
 
 15. Are there updated and accurate network diagrams
 
 16. What is used for network monitoring and alerting
 
 17. What is used for log aggregation and analysis
-  * Is there a team / single person for it or does "whoever has time" go for it
+   * Is there a team / single person for it or does "whoever has time" go for it
 
 18. Budgets
-  * What is the IT budget
-  * How is the Budget approved (who is involved, if I need a new server)
-  * What's the training budget per staff member
-  * Can I see the IT budget?
+   * What is the IT budget
+   * How is the Budget approved (who is involved, if I need a new server)
+   * What's the training budget per staff member
+   * Can I see the IT budget?
 
 19. Issues 
-  * What are the biggest issues / struggles right now
-  * Over the past few months, what types of outages were experienced what was their root causes
-  * Is there a disaster recovery plan
-  * Is the disaster recovery plan tested (regularly?)
-  * Who is responsible for the UPS / Generator
-  * Is the UPS / Generator tested (regularly?)
-  * Is the UPS / Generator serviced
-  * Is there a Business Continuity plan
-  * Is the Business Continuity plan regularly updated / tested
+   * What are the biggest issues / struggles right now
+   * Over the past few months, what types of outages were experienced what was their root causes
+   * Is there a disaster recovery plan
+   * Is the disaster recovery plan tested (regularly?)
+   * Who is responsible for the UPS / Generator
+   * Is the UPS / Generator tested (regularly?)
+   * Is the UPS / Generator serviced
+   * Is there a Business Continuity plan
+   * Is the Business Continuity plan regularly updated / tested
 
 20. Projects / Planning
-  * What are recent completed projects
-  * What projects are being worked on
-  * What projects are coming down the pipe
-  * How many months/years ahead are projects planned
+   * What are recent completed projects
+   * What projects are being worked on
+   * What projects are coming down the pipe
+   * How many months/years ahead are projects planned
 
 21. What do I need to accomplish within the next 30/60/90 days
 
