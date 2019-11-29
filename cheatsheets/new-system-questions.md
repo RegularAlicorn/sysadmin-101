@@ -19,6 +19,7 @@ Questions to answer in a new system - or keep track of in a known system. Possib
    * What is used for password management
    * What is the password policy for administrative passwords
    * Is there password management for users
+   * Who has access to (which) administrative passwords
 5. DNS
    * How is DNS setup
    * Who is the external DNS provider
