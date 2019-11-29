@@ -43,41 +43,41 @@ Questions to answer in a new system - or keep track of in a known system. Possib
 12. How are maintenance contract renewals tracked
 
 13. Give me an overview of the ORG chart
-   * Who is IT reporting to (CFO? No thank you.)
+    * Who is IT reporting to (CFO? No thank you.)
 
 14. What is the on-boarding / off-boarding process
-   * How much of these is automated
-   * How many people are involved
+    * How much of these is automated
+    * How many people are involved
 
 15. Are there updated and accurate network diagrams
 
 16. What is used for network monitoring and alerting
 
 17. What is used for log aggregation and analysis
-   * Is there a team / single person for it or does "whoever has time" go for it
+    * Is there a team / single person for it or does "whoever has time" go for it
 
 18. Budgets
-   * What is the IT budget
-   * How is the Budget approved (who is involved, if I need a new server)
-   * What's the training budget per staff member
-   * Can I see the IT budget?
+    * What is the IT budget
+    * How is the Budget approved (who is involved, if I need a new server)
+    * What's the training budget per staff member
+    * Can I see the IT budget?
 
 19. Issues 
-   * What are the biggest issues / struggles right now
-   * Over the past few months, what types of outages were experienced what was their root causes
-   * Is there a disaster recovery plan
-   * Is the disaster recovery plan tested (regularly?)
-   * Who is responsible for the UPS / Generator
-   * Is the UPS / Generator tested (regularly?)
-   * Is the UPS / Generator serviced
-   * Is there a Business Continuity plan
-   * Is the Business Continuity plan regularly updated / tested
+    * What are the biggest issues / struggles right now
+    * Over the past few months, what types of outages were experienced what was their root causes
+    * Is there a disaster recovery plan
+    * Is the disaster recovery plan tested (regularly?)
+    * Who is responsible for the UPS / Generator
+    * Is the UPS / Generator tested (regularly?)
+    * Is the UPS / Generator serviced
+    * Is there a Business Continuity plan
+    * Is the Business Continuity plan regularly updated / tested
 
 20. Projects / Planning
-   * What are recent completed projects
-   * What projects are being worked on
-   * What projects are coming down the pipe
-   * How many months/years ahead are projects planned
+    * What are recent completed projects
+    * What projects are being worked on
+    * What projects are coming down the pipe
+    * How many months/years ahead are projects planned
 
 21. What do I need to accomplish within the next 30/60/90 days
 
