@@ -250,3 +250,16 @@ resize2fs /dev/<vg-name>/root
 # For good measure
 reboot
 ```
+
+## Debian / Kali
+Kali - available in the Windows Store - offers a wide range of useful tools for sysadmins.
+
+### List installed packages
+```bash
+dpkg --list
+```
+
+### Remove all for deletion marked packages
+```bash
+dpkg --list | grep "^rc" | cut -d " " -f 3 | sudo xargs dpkg --purge
+```
