@@ -48,7 +48,7 @@ sudo reboot
 # Update system
 sudo apt-get update && sudo apt-get upgrade
 
-# Kill a prorcess
+# Kill a process
 # Use top or ps -ef to the needed PID. Grep reduces the lists volume
 ps -ef | grep firefox
 kill <PID>
