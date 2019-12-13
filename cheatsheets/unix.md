@@ -221,6 +221,16 @@ getent group <groupname> | awk -F: '{print $4}'
 ## Ubuntu
 These commands at least work on Ubuntu.
 
+### File properties, metadata, ..
+```bash
+# details
+stat <file>
+# meta information
+ls -lh <file>
+# general
+file <file>
+```
+
 ### Extend disk volume group
 ```bash
 # Check free disk space
