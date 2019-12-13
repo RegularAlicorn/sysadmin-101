@@ -221,6 +221,11 @@ getent group <groupname> | awk -F: '{print $4}'
 ## Ubuntu
 These commands at least work on Ubuntu.
 
+### Show disk usage
+```bash
+df -h
+```
+
 ### File properties, metadata, ..
 ```bash
 # details
