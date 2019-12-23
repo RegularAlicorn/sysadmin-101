@@ -65,6 +65,16 @@ Invoke-Command -ComputerName <Host> -ScriptBlock {
 }
 ```
 
+### Start a process as a different User
+```powershell
+Start-Process <path to executable> -Credential <domain\samaccountname>
+```
+
+### Start MMC as different User ELEVEATED and given file to load
+```powershell
+Start-process powershell.exe -Credential <domain\samaccountname> -ArgumentList '-noprofile -command &{Start-Process mmc -Argument "C:\Path\To\MMC\File" -Verb RunAs}'
+```
+
 ### GridView local events
 ```powershell
 # "ogv" is an alias of Out-GridView
