@@ -29,6 +29,9 @@ Common resources, useful information, places to learn and look-up documentations
 * (https://github.com/mozilla/policy-templates/releases)
   
   Mozilla Firefox GPO Templates
+* (https://www.garykessler.net/library/file_sigs.html)
+  
+  GCK'S File Signatures Table
 
 ## Tools
 * (https://www.virustotal.com/gui/home/upload)
