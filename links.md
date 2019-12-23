@@ -137,6 +137,7 @@ Microsoft System related Links
 * (http://aka.ms/CyberPAW)
 
   Massive Privileged Access Workstations information. For most systems, just take ideas from this
+* [Security Baseline Win10 1909/Server1909](https://techcommunity.microsoft.com/t5/Microsoft-Security-Baselines/Security-baseline-FINAL-for-Windows-10-v1909-and-Windows-Server/ba-p/1023093)
 * [Security Baseline Win10 1903/Server 1903](https://blogs.technet.microsoft.com/secguide/2019/05/23/security-baseline-final-for-windows-10-v1903-and-windows-server-v1903/)
 * [Security Baseline Office 2016/Office 365 ProPlus apps](https://blogs.technet.microsoft.com/secguide/2018/02/13/security-baseline-for-office-2016-and-office-365-proplus-apps-final/)
 
