@@ -72,7 +72,7 @@ Start-Process <path to executable> -Credential <domain\samaccountname>
 
 ### Start MMC as different User ELEVEATED and given file to load
 ```powershell
-Start-process powershell.exe -Credential <domain\samaccountname> -ArgumentList '-noprofile -command &{Start-Process mmc -Argument "C:\Path\To\MMC\File" -Verb RunAs}'
+Start-process powershell.exe -Credential "" -ArgumentList '-noprofile -command &{Start-Process mmc -Argument "C:\Path\To\MMC\File" -Verb RunAs -WorkingDirectory C:\}' -WorkingDirectory C:\
 ```
 
 ### GridView local events
