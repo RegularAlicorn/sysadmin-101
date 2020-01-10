@@ -13,6 +13,11 @@ _DCDIAG.exe_ is a tool to test domain controllers for functionality within a for
 DCDIAG /e /v /c /f:dcdiag.txt
 ```
 Check the output file for "error"s and "failure"s. `DCDIAG /e /v /c /q` discretly only mentions errors and turns down the noise.
+You can use PowerShell to filter the output file for interesting lines. There will be some false positives, due to names of the tests (e.g. "CheckSecurityError"-Test)
+```powershell
+DCDIAG /e /v /c /f:dcdiag.txt /q
+Get-Content dcdiag.txt | Select-String -Pattern "error","failure","failed" -Context 2
+```
 
 #### repadmin.exe
 For an overview of the replication state we can use _repadmin.exe_ - also included in _RSAT_. 
@@ -39,7 +44,7 @@ whoami /groups
 # is the identifier for the local computer session
 klist -lh 0 -li 0x3e7 purge
 
-# Update policices
+# Update policies
 gpupdate /force
 
 # reset user ticket
@@ -53,7 +58,7 @@ klist tgt
 ## Security
 
 ### ACLs
-Grant Read-Write permissions for given account to itself on the attribute "servicePrincipalName"
+Grant Read-Write permissions for given account to itself on the attribute "servicePrincipalName". This is for example needed on computer accounts which handle SQL and register these themselves.
 ```powershell
 dsacls <Account DN> /G SELF:RPWP;"servicePrincipalName" 
 ```
