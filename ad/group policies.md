@@ -3,6 +3,14 @@ Group policies are a neat way in a Active Directory to ensure all your enrolled 
 
 The default set of policies is sufficient for Windows native. If you use any non-Microsoft applications - as does basically everyone - and those adhere to specific registry entries, then it's possible to manage those applications aswell. Many bigger applications bring their own set of policies in a format called **.admx**.
 
+## GPO Filtering
+You can apply gpo by default to OUs, and have them be inherited downwards. With filters you can handle exceptions and grouping without creating new OUs. Since a machine can only reside within 1 OU, there is a limit to complexity if you only depend on OU structure and inheritance to apply your ruleset.
+
+### Apply to (any) user only for certain machines
+If you need to apply policies to any/all users using a specific machine dependant only on the machine, and different policies for other machines, you can do this with the loop back policy. 
+
+The loop back policy is a entry within a gpo to enable. Every machine specific policy will then apply to the user. Either exclusively (replace) or additionally (merge). The policy is ``Computer Configuration\Administrative Templates\System\Group Policy\Loopback Policy``
+
 ## Install new Policies
 * Download the new set of policies from the vendors resources. Be careful to not download malicious data; **only ever use official channels!**
 * (most likely extract the files)
