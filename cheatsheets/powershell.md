@@ -38,6 +38,13 @@ You can change the values of environment variables similar to `set` of the comma
 **Add C:\scripts\ to the current _PATH_** `$env:Path += 'C:\scripts'`
 **Remove variable _"scripts"_** `$env:scripts = ''` _OR_ `$env:scripts = $null`
 
+### WMI
+You can query WMI from Powershell. E.g. you can get operating system values if the system name is \[not\] given name:
+```powershell
+Get-WmiObject -Query 'SELECT * from WIN32_OperatingSystem WHERE [NOT] csname="<systemname>"'
+gwmi -Query 'SELECT * from WIN32_OperatingSystem WHERE [NOT] csname="<systemname>"'
+```
+
 ## Powershell drives
 PSDrives are a the way of powershell to handle different working directories. This does not only include the intuitive filesystem drives but also the registry, ws management, windows environment variables, and active directory.
 
