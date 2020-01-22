@@ -34,6 +34,22 @@ Yes. The new Edge is based on chromium and handles group policies well. You can 
 ## Which policies are currently active for my Edge instance?
 Edge has a handy URL for this, open **edge://policy/**.
 
+## Add uBlock Origin as a silently installed Extension
+1. Find extension in the [store](https://microsoftedge.microsoft.com/addons/)
+2. Get the extension ID (last part of the URL). uBlock Origin has **odfafepnkmbhccpbejgmiehpchacaeak**
+3. Create a gpo in a fitting place for all machines who need to install this extension
+4. Enable **Computer/Administrative Templates/Microsoft Edge/Extension/Control which extensions are installed silently"
+5. Set Value: **cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx**
+
+## Add custom filter entries for uBlock Origin
+```
+hive: HKEY_CURRENT_USER
+path: Software\Policies\Microsoft\Edge\3rdparty\extensions\odfafepnkmbhccpbejgmiehpchacaeak\policy
+type: REG_SZ
+
+value: {"autoUpdate":true,"contextMenuEnabled":false,"showIconBadge":false},"netWhitelist":"about-scheme\nchrome-extension-scheme\nchrome-scheme\nmoz-extension-scheme\nopera-scheme\nvivaldi-scheme\nwyciwyg-scheme\n<URL1>\n<URL2>"}
+```
+
 ## Can I manage Firefox with group policies?
 Yes. Their GitHub repository contains the current set of policies, see [github.com/Mozilla](https://github.com/mozilla/policy-templates)
 
