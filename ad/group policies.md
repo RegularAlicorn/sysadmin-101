@@ -28,16 +28,22 @@ Policies are always backwards compatible. In the end policies just offer a human
 
 Policies - by Microsoft atleast - are never changed. Hence it's always safe to update.
 
-## Can I manage Firefox with Group Policies?
+## Can I manage (the new) Edge with group policies?
+Yes. The new Edge is based on chromium and handles group policies well. You can get the current set on their [Landing page](https://www.microsoft.com/en-us/edge/business/download)
+
+## Which policies are currently active for my Edge instance?
+Edge has a handy URL for this, open **edge://policy/**.
+
+## Can I manage Firefox with group policies?
 Yes. Their GitHub repository contains the current set of policies, see [github.com/Mozilla](https://github.com/mozilla/policy-templates)
 
-## Which Policies are currently active for my firefox instance?
+## Which policies are currently active for my Firefox instance?
 Firefox has a handy URL for this, open **about:policies**. The "Documentation" Tab contains further explanations and examples for available policies.
 
-## Can I manage Chrome with Group Policies?
+## Can I manage Chrome with group policies?
 Yes. Their Help Center contains the link to the current policies, see [Chrome Help Center](https://support.google.com/chrome/a/answer/187202?hl=en)
 
-## Which Policies are currently active for my chrome instance?
+## Which policies are currently active for my Chrome instance?
 Chrome has a handy URL for this, open **chrome://policy/**. Each Policy entry applies to either "Machine" or "Current user".
 
 ## To manage office addins, I need the ProgID of those. How do I get it?
