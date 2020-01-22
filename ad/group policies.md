@@ -15,7 +15,7 @@ The loop back policy is a entry within a gpo to enable. Every machine specific p
 * Download the new set of policies from the vendors resources. Be careful to not download malicious data; **only ever use official channels!**
 * (most likely extract the files)
 * decide which languages you want to use to manage your domain policies. This language does not matter to the client, it's only for administrative use.
-* Copy the **.admx** files on any (not read-only) Domain Controller into _C:\Windows\Sysvol\<Domain>\Policies\PolicyDefinitions\_
+* Copy the **.admx** files on any (not read-only) Domain Controller into _C:\Windows\Sysvol\\<Domain>\Policies\PolicyDefinitions\_
 * Copy each languages **.adml** all into their respective subfolders. Again, it would be enough to copy the *english files* to manage *italian clients and servers*.
 
 ## Do you need to update policies?
