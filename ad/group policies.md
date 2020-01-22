@@ -39,7 +39,8 @@ Edge has a handy URL for this, open **edge://policy/**.
 2. Get the extension ID (last part of the URL). uBlock Origin has **odfafepnkmbhccpbejgmiehpchacaeak**
 3. Create a gpo in a fitting place for all machines who need to install this extension
 4. Enable **Computer/Administrative Templates/Microsoft Edge/Extension/Control which extensions are installed silently"
-5. Set Value: **cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx**
+5. Set Value: **odfafepnkmbhccpbejgmiehpchacaeak;https://edge.microsoft.com/extensionwebstorebase/v1/crx**
+
 
 ## Add custom filter entries for uBlock Origin
 ```
@@ -61,6 +62,22 @@ Yes. Their Help Center contains the link to the current policies, see [Chrome He
 
 ## Which policies are currently active for my Chrome instance?
 Chrome has a handy URL for this, open **chrome://policy/**. Each Policy entry applies to either "Machine" or "Current user".
+
+## Add uBlock Origin as a silently installed Extension
+1. Find extension in the [store](https://microsoftedge.microsoft.com/addons/)
+2. Get the extension ID (last part of the URL). uBlock Origin has **odfafepnkmbhccpbejgmiehpchacaeak**
+3. Create a gpo in a fitting place for all machines who need to install this extension
+4. Enable **Computer/Administrative Templates/Microsoft Edge/Extension/Control which extensions are installed silently"
+5. Set Value: **cjpalhdlnbpafiamejdnhcphjbkeiagm;https://clients2.google.com/service/update2/crx**
+
+## Add custom filter entries for uBlock Origin
+```
+hive: HKEY_CURRENT_USER
+path: Software\Policies\Google\Chrome\3rdparty\extensions\odfafepnkmbhccpbejgmiehpchacaeak\policy
+type: REG_SZ
+
+value: {"autoUpdate":true,"contextMenuEnabled":false,"showIconBadge":false},"netWhitelist":"about-scheme\nchrome-extension-scheme\nchrome-scheme\nmoz-extension-scheme\nopera-scheme\nvivaldi-scheme\nwyciwyg-scheme\n<URL1>\n<URL2>"}
+```
 
 ## To manage office addins, I need the ProgID of those. How do I get it?
 Use PowerShell on a system with the addin installed
