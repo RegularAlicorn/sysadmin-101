@@ -1,3 +1,13 @@
+# ESX
+
+## Cancel stuck VMware Tools installation from cli
+If a VM is stuck on a VMware Tools installation, you can't shut down; or unmount the drive with the installatio .iso; or cancel the installation; then you can cancel it from the corresponding ESX host cli.
+```bash
+vim-cmd vmsvc/getallvms | grep "<vmname>"
+# Read Id on the left-most column
+vim-cmd vmsvc/tools.cancelinstall <vm ID>
+```
+
 # vSphere
 
 ## Configuration
