@@ -50,6 +50,12 @@ logoff <ID>
 net user /add <userName> <password> && net localgroup administrators <userName> /add
 ```
 
+### Convert SID to Username
+```powershell
+(New-Object System.Security.Principal.SecurityIdentifier("S-1-5-18")).Translate([System.Security.Principal.NTAccount])
+# Outputs "NT AUTHORITY\SYSTEM"
+```
+
 ### Disable sleep mode
 ```shell
 powercfg -x -standby-timeout-ac 0
