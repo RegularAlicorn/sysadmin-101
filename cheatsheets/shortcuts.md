@@ -105,6 +105,7 @@ dsac.msc | Slower, unwieldy dsa. Can handle fine grained password policies.
 dnsmgmt | DNS Manager
 dhcpmgmt | DHCP Management
 dssite.msc | Sites & Services
+sysdm.cpl | System Properties (for domain join and hostname change)
 rsop.msc | Resultant Set of Policies
 dompol.msc | Domain Security Policy
 domain.msc | Domains & Trust
