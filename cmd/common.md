@@ -147,6 +147,12 @@ Create a new file _"m.cmd"_ in _%windir%
 mstsc /v:%1
 ```
 
+### Start a Program without Elevation, even if the Application wants to!
+Just drag an application (.exe) onto a .bat with the following contents
+```shell
+cmd /min /C "set __COMPAT_LAYER=RUNASINVOKER && start "" "%1""
+```
+
 ## WSL (Windows Subsystem for Linux)
 ### Display weather info
 ```shell
