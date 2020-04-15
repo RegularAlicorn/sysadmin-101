@@ -94,3 +94,13 @@ Use PowerShell on a system with the addin installed
 (New-Object -com Outlook.Application).Comaddins
 (New-Object -com Outlook.Application).Addins
 ```
+
+## WMI Filter: Restrict GPO applying to specific machines
+You can use WMI-Filters to restrict GPOs to specific machines. For example, based on the computer name:
+```
+SELECT csname FROM win32_operatingsystem where csname="<SERVER HOSTNAME>"
+```
+To test these queries, use powershell:
+```powershell
+Get-WmiObject -Query "SELECT csname FROM win32_operatingsystem where csname="<SERVER HOSTNAME>"
+```
