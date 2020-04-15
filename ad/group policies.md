@@ -102,5 +102,5 @@ SELECT csname FROM win32_operatingsystem where csname="<SERVER HOSTNAME>"
 ```
 To test these queries, use powershell:
 ```powershell
-Get-WmiObject -Query "SELECT csname FROM win32_operatingsystem where csname="<SERVER HOSTNAME>"
+Get-WmiObject -Query 'SELECT csname FROM win32_operatingsystem where csname="<SERVER HOSTNAME>"'
 ```
