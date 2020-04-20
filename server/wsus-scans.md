@@ -77,7 +77,8 @@ Command | Description
 --------|------------
 StartScan | Scan for available updates, update settings like downloads apply
 StartDownload | Download available updates
-StartInstall | Install available updates
+ScanInstallWait | Scan then Downloads Updates, takes time to finish
+StartInstall | Install available updates, needs ScanInstallWait to be run first
 RestartDevice | Restart computer to finish update installation
 RefreshSettings | Apply setting changes
 ResumeUpdate | Continues updates on the next boot
