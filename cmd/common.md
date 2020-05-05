@@ -132,6 +132,17 @@ $bytes[0x15] = $bytes[0x15] -bor 0x20 # sets byte 21 (0x15) bit 6 (0x20) TRUE
 [System.IO.File]::WriteAllBytes($lnkPath, $bytes)
 ```
 
+## Auto-Run programs (used by some Malware)
+Get all Run and RunOnce Programs defined in the machine (run as admin) and current user (run as current user)
+```powershell
+# Run as Admin
+Get-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+Get-Item -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce"
+# Run as User
+Get-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
+Get-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce"
+```
+
 ## From-Anywhere©
 Shortcuts to specific tasks from search menu, explorer and run dialog.
 
