@@ -147,13 +147,13 @@ Get-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce"
 Shortcuts to specific tasks from search menu, explorer and run dialog.
 
 ### Access Remote Computermanagement From-Anywhere
-Create a new file _"mg.cmd"_ in _ %windir% _
+Create a new file _"mg.cmd"_ in _%windir%_
 ```shell
 start compmgmt.msc /computer=%1
 ```
 
 ### Start mstsc to a specific server From-Anywhere
-Create a new file _"m.cmd"_ in _ %windir% _
+Create a new file _"m.cmd"_ in _%windir%_
 ```shell
 mstsc /v:%1
 ```
