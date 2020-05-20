@@ -143,6 +143,11 @@ Get-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
 Get-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce"
 ```
 
+## Poll Remaining Grace License Time for RDS (Terminal Server)
+```cmd
+wmic /namespace:\\root\CIMV2\TerminalServices PATH Win32_TerminalServiceSetting WHERE (__CLASS !=””) CALL GetGracePeriodDays
+```
+
 ## From-Anywhere©
 Shortcuts to specific tasks from search menu, explorer and run dialog.
 
