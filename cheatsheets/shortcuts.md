@@ -71,6 +71,7 @@ cmd | Command Prompt
 mstsc | Remote Desktop
 shell:startup | Current users autostart folder
 shell:common startup | Public autostart folder (executed for every user)
+pktmon.exe | In-box, cross-component, network diagnostics tool for Windows
 perfmon | Opens Performance Monitor
 eventvwr | Event Viewer
 taskschd | Task Scheduler
