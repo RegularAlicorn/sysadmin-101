@@ -50,6 +50,14 @@ logoff <ID>
 net user /add <userName> <password> && net localgroup administrators <userName> /add
 ```
 
+### Fix wrong network category
+Sometimes Windows decides on the wrong network category (public instead of private/domain).
+```powershell
+# Get current network profiles
+Get-NetConnectionProfile
+Set-NetConnectionProfile -Name <profile name> -NetworkCategory [DomainAuthenticated|Private|Public]
+```
+
 ### Convert SID to Username
 ```powershell
 (New-Object System.Security.Principal.SecurityIdentifier("S-1-5-18")).Translate([System.Security.Principal.NTAccount])
