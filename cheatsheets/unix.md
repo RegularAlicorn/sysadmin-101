@@ -4,7 +4,7 @@ Even if you normally only work with Windows systems, you will need unix systems 
 There might be version and distribution differences in commands.
 
 ## Linux on Windows
-You can install WSL (Windows Subsystem for Linux) to get a Linux Kernel onto your Windows 10 machine. At the time of writing the _true_ linux kernel is announced but not yet implemented.
+You can install WSL (Windows Subsystem for Linux) to get a Linux Kernel onto your Windows 10 machine. WSL2 is now out, you need Windows 2004 to install it. WSL2 is a true UNIX kernel, you can even run Docker and such! 
 
 ### Installation Windows 10
 ```powershell
