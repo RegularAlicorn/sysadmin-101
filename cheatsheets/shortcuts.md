@@ -119,7 +119,8 @@ certsrv.msc | Certification services
 You can get all settings in one convenient location, unlike the mess Microsoft pulls right now with Settings and control.exe.
 
 Create a new folder and name it exactly:
-English OS: ``GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}``
-
-German OS: ``Alle Aufgaben.{ED7BA470-8E54-465E-825C-99712043E01C}``
+OS Language | Folder name
+---|---
+English OS | ``GodMode.{ED7BA470-8E54-465E-825C-99712043E01C}``
+German OS | ``Alle Aufgaben.{ED7BA470-8E54-465E-825C-99712043E01C}``
 
