@@ -236,7 +236,7 @@ network:
       eth160:
             dhcp4: no
             addresses:
-                  - 192.168.121.199/24
+                  192.168.121.199/24
             gateway4: 192.168.121.1
             nameservers:
                   addresses: [8.8.8.8, 1.1.1.1]       
