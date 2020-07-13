@@ -181,6 +181,16 @@ top -u <username>
 top -i
 ```
 
+### Implement SSH
+```bash
+# Is there already a rsa key-pair available?
+ls -l ~/.ssh/id_*.pub
+# Generate new key
+ssh-keygen -t rsa -b 4096 -C "<name@example.com>"
+# Upload rsa public key to server
+ssh-copy-id <username>@<server address>
+```
+
 ### User
 **List all local users**
 ```bash
