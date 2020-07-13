@@ -236,14 +236,14 @@ network:
       eth160:
             dhcp4: no
             addresses:
-                  192.168.121.199/24
+                  - 192.168.121.199/24
             gateway4: 192.168.121.1
             nameservers:
                   addresses: [8.8.8.8, 1.1.1.1]       
       version: 2
 ```
 ```bash
-# Test configuration file
+# Test configuration file, will revert after some time to not lock you out
 sudo netplan try
 # Apply configuration
 sudo netplan apply
