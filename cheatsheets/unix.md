@@ -230,14 +230,23 @@ sudo cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.y
 # Modify netplan
 sudo nano /etc/netplan/00-installer-config.yaml
 ```
-```
+```bash
 # 00-installer-config.yaml
-dhcp4: no
-      addresses:
-        - 192.168.121.199/24
-      gateway4: 192.168.121.1
-      nameservers:
-          addresses: [8.8.8.8, 1.1.1.1]       
+network:
+      eth160:
+            dhcp4: no
+            addresses:
+                  - 192.168.121.199/24
+            gateway4: 192.168.121.1
+            nameservers:
+                  addresses: [8.8.8.8, 1.1.1.1]       
+      version: 2
+```
+```bash
+# Test configuration file
+sudo netplan try
+# Apply configuration
+sudo netplan apply
 ```
 
 ### Show disk usage
