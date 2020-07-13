@@ -221,6 +221,25 @@ getent group <groupname> | awk -F: '{print $4}'
 ## Ubuntu
 These commands at least work on Ubuntu.
 
+### Set static IP-adress
+```bash
+# Find <interface name>
+ip -c a
+# Backup current netplan
+sudo cp /etc/netplan/00-installer-config.yaml /etc/netplan/00-installer-config.yaml.bak
+# Modify netplan
+sudo nano /etc/netplan/00-installer-config.yaml
+```
+```
+# 00-installer-config.yaml
+dhcp4: no
+      addresses:
+        - 192.168.121.199/24
+      gateway4: 192.168.121.1
+      nameservers:
+          addresses: [8.8.8.8, 1.1.1.1]       
+```
+
 ### Show disk usage
 ```bash
 df -h
