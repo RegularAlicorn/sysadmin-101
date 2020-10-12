@@ -183,3 +183,9 @@ cmd /min /C "set __COMPAT_LAYER=RUNASINVOKER && start "" "%1""
 curl wttr.in
 curl wttr.in/<city>
 ```
+
+## Certificate
+### Convert a .req requirement into a certificate
+```shell
+certreq -submit -attrib "CertificateTemplate:<Template Name>"
+```
