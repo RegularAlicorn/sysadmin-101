@@ -81,7 +81,27 @@ Set-Location HKCU:/Software/Chrome
 Get-Item chrome
 Get-ItemProperty chrome
 ```
+
+## Enable Strong .NET cryptography
+```powershell
+# Check transport layer security protocols
+[Net.ServicePointManager]::SecurityProtocol
+# PS 4+, 64-bit
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\Wow6432Node\Microsoft\.NetFramework\v4.0.30319' -Name 'SchUseStrongCrypto' -Value '1' -Type DWord
+# PS 4+, 32-bit
+Set-ItemProperty -Path 'HKLM:\SOFTWARE\Microsoft\.NetFramework\v4.0.30319' -Name 'SchUseStrongCrypto' -Value '1' -Type DWord
+```
+
 ## Development Environment
+**Install Package Provider**
+```powershell
+# PS 5+
+Install-Module PowershellGet -Force
+
+# PS <5
+Install-PackageProvider NuGet
+```
+
 **Install a new module** `Install-Module -Name <ModuleName>`
 
 ### Useful Modules
