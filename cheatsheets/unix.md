@@ -228,6 +228,11 @@ getent group <groupname>
 getent group <groupname> | awk -F: '{print $4}'
 ```
 
+### Convert Certificate File .cer to .pem
+```bash
+openssl x509 -inform DER -in certificate.cer -out certificate.pem
+```
+
 ## Ubuntu
 These commands at least work on Ubuntu.
 
