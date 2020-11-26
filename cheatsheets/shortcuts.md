@@ -88,6 +88,7 @@ mmc.exe | Microsoft Management Console
 msinfo32.exe | Hardware/software cnfiguration information
 regedit.exe | Registry Editor
 secpol.msc | Local security policy
+control.exe /name Microsoft.NetworkandSharingCenter | Network and Sharing Center
 diskmgmt.msc | Disk Management
 devmgmt.msc | Device Manager
 explorer . | Opens explorer at current location
