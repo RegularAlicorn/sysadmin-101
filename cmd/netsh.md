@@ -4,6 +4,12 @@ Netsh is a command-line tool to handle network configuration of your Windows com
 ## How can you call netsh.exe?
 Any open cmd.exe, the "run" dialog or start menu search can natively call netsh.exe. It is located in system32 an thus automatically loaded
 
+## Global Paramenters
+You can check the global parameters of your tcp configuration
+```
+netsh int tcp show global
+```
+
 ## How can you change the mtu (maximum transmission unit) value?
 For rare cases it is helpful or necessary to change the maximum transmission unit value. Generally does a higher value decrease the overhead and a lower value lessens the strain on a slow data-link.
 You can see current mtu for any interface with the following command 
