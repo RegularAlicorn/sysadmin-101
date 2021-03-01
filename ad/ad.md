@@ -23,6 +23,7 @@ Get-Content dcdiag.txt | Select-String -Pattern "error","failure","failed" -Cont
 For an overview of the replication state we can use _repadmin.exe_ - also included in _RSAT_. 
 1. Run `repadmin /replsummary` for a quick overview of your domain controllers and their replication state and possibly errors
 2. Run `repadmin /showrepl` to see replications attempts and whether they were successful
+3. Run `repadmin /bridgeheads` to see the DCs which funnel replication data for their site
 
 #### netdom.exe
 To check for FSMO role holders and whether they respond we can use `netdom query FSMO`.
