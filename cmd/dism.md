@@ -23,7 +23,7 @@ First we have to check available version for our image. For this we need to use 
 To see available commands, check `dism /Online /?`.
 * check available editions with `dism /Online /Get-TargetEditions`. The output displays all available target editions, for example ServerStandard, ServerDatacenter, ProfessionalEducation, Enterprise and more.
 * decide which edition is required for you license model. Check with your license manager if unsure!
-* change your image edition with `dism /Online /Set-TargetEdition: /ProductKey:<product key> /AcceptEula
+* change your image edition with `dism /Online /Set-Edition: /ProductKey:<product key> /AcceptEula`
 
 ## Is there a way to install a Windows OS and license it later?
 
