@@ -45,6 +45,12 @@ query user
 logoff <ID>
 ```
 
+### Find configured wlan password
+```shell
+netsh wlan show profiles
+netsh wlan show profiles <ssid> key=clear
+```
+
 ### Create local user and add to local administrators in 1 Line
 ```shell
 net user /add <userName> <password> && net localgroup administrators <userName> /add
