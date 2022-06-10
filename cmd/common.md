@@ -157,6 +157,14 @@ Get-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\Run"
 Get-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce"
 ```
 
+## Deinstall programs
+```bash
+wmic product list brief
+
+# find IdentifyingNumber of the correct product
+msiexec /x {ProductCode}
+```
+
 ## Poll Remaining Grace License Time for RDS (Terminal Server)
 ```cmd
 wmic /namespace:\\root\CIMV2\TerminalServices PATH Win32_TerminalServiceSetting WHERE (__CLASS !=””) CALL GetGracePeriodDays
