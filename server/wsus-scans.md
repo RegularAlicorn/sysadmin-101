@@ -144,3 +144,17 @@ wuauclt /detectnow
 wuauclt /reportnow
 Usoclient StartScan
 ```
+
+## Heavy Windows Server Update fix
+```
+net stop wuauserv
+net stop bits
+net stop appidsvc
+net stop cryptsvc
+rd /s /q c:\windows\SoftwareDistribution\Datastore
+del /f C:\ProgramData\Microsoft\Network\Downloader\qmgr*.dat
+net start wuauserv
+net start bits
+net start appidsvc
+net start cryptsvc
+```
