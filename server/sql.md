@@ -35,3 +35,8 @@ setspn -l <servername>
 setspn -A MSSQLSvc/<servername>:1433 Domain\Account
 setspn -A MSSQLSvc/<servername>:<instance name> Domain\Account
 ```
+
+### Update local user after user or server renamed
+```sql
+alter login "<Server>\<User>" WITH NAME="<New Server>\<New User>"
+```
