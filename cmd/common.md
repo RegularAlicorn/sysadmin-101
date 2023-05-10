@@ -203,3 +203,9 @@ curl wttr.in/<city>
 ```shell
 certreq -submit -attrib "CertificateTemplate:<Template Name>"
 ```
+
+
+## Files to ISO
+```shell
+C:\Program Files (x86)\Windows Kits\10\Assessment and Deployment Kit\Deployment Tools\amd64\OSCDIMG\OSCDIMG.exe -n -d -m PathToSource Destinationfile.ISO
+```
