@@ -120,6 +120,11 @@ hh.exe C:\
 Get-WmiObject -Class Win32_Service -ComputerName $computerName | Select DisplayName, StartName, State
 ```
 
+### List all "Command Line" Properties of currently running processes
+```powershell
+Get-Process | %{Get-WmiObject Win32_Process -Filter "ProcessId = '$($_.id)'" | Select-Object CommandLine}
+```
+
 ### Create a shortcut with powershell
 ```powershell
 # Define shortcut name
