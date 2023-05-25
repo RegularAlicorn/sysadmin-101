@@ -54,17 +54,3 @@ If you are aware of the serious security issue if you enable telnet use the foll
 dism /Online /Enable-Feature /FeatureName:telnetclient
 ```
 You can enable other features by inserting the correct feature name.
-
-## Last resort fixing
-If you tried everything and a reinstall is costly - for unknown reason - you can fire off these last-resort-commands in an eleveated command prompt and hope for the best
-```
-REM Only answer Microsoft ever offers in their forums, works 1 in 10mio tries.
-sfc /scannow
-REM Cleanup windows components, add /ResetBase if you want full cleanup
-REM With /ResetBase added you won't be able to deinstall any Update!
-dism /Online /Cleanup-Image /StartComponentCleanup
-REM Scans component storage for errors
-dism /Online /Cleanup-Image /ScanHealth
-REM Tries to automatically repair errors in the component storage
-dism /Online /Cleanup-Image /RestoreHealth
-```
