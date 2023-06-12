@@ -166,6 +166,9 @@ Get-Item -Path "HKCU:\SOFTWARE\Microsoft\Windows\CurrentVersion\RunOnce"
 ```bash
 wmic product list brief
 
+# find more info for a specific product
+wmic product where IdentifyingNumber="{GUID}"
+
 # find IdentifyingNumber of the correct product
 msiexec /x {ProductCode}
 ```
