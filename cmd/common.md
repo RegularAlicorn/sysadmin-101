@@ -23,6 +23,11 @@ DRIVERQUERY | CLIP
 ipconfig /all > C:\temp\ipconfig.log
 ```
 
+### Get system information
+```shell
+wmic csproduct get
+```
+
 ### Get all installed drivers
 ```shell
 DRIVERQUERY
