@@ -40,3 +40,20 @@ setspn -A MSSQLSvc/<servername>:<instance name> Domain\Account
 ```sql
 alter login "<Server>\<User>" WITH NAME="<New Server>\<New User>"
 ```
+
+### Exit Single-User Mode
+```sql
+USE master
+GO
+DECLARE @kill varchar(max) = '';
+SELECT @kill = @kill + 'KILL ' + CONVERT(varchar(10), spid) + '; '
+FROM master..sysprocesses 
+WHERE spid > 50 AND dbid = DB_ID('<Your_DB_Name>')
+EXEC(@kill);
+
+GO
+SET DEADLOCK_PRIORITY HIGH
+ALTER DATABASE [<Your_DB_Name>] SET MULTI_USER WITH NO_WAIT
+ALTER DATABASE [<Your_DB_Name>] SET MULTI_USER WITH ROLLBACK IMMEDIATE
+GO
+```
