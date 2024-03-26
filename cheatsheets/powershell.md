@@ -259,3 +259,14 @@ $data.forEach({
 $sw.Stop()
 $sw
 ```
+
+## Set a Registry Key
+```powershell
+# Example sets the Adobe AI feature to disabled
+$Path = 'HKLM:\SOFTWARE\Policies\Adobe\Adobe Acrobat\DC\FeatureLockDown'
+if (!(Test-Path $Path))
+{
+    $null = New-Item $Path -Force -ErrorAction Stop
+}
+New-ItemProperty $Path -Name bEnableGentech -PropertyType Dword -Value 0 -Force
+```
