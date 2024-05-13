@@ -1,6 +1,11 @@
 # Common commands
 Some commonly useful commands
 
+### Check a system for some general configuration parameters, RUN
+```shell
+sconfig
+```
+
 ### Add console output to clipboard (for pasting later)
 **CLIP IS ALL CAPS**
 
