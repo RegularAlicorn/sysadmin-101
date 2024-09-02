@@ -35,7 +35,7 @@ Common resources, useful information, places to learn and look-up documentations
 
 ## Services
 ### Monitoring
-* Create a Service Page with OpenSource - [CacheTHQ](https://cachethq.io/ )
+* Create a Service Page with OpenSource - [Cachet](https://cachethq.io/ )
 * (pulsetic.com)
 * (pingdom.com)
 * (statuscake.com)
