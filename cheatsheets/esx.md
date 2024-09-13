@@ -10,6 +10,13 @@ vim-cmd vmsvc/tools.cancelinstall <vm ID>
 
 # vSphere
 
+## Enable VM copy&paste
+```
+isolation.tools.copy.disable = FALSE
+isolation.tools.paste.disable = FALSE
+isolation.tools.setGUIOptions.enable  = TRUE
+```
+
 ## Configuration
 
 ### Change vSphere Password expiration notification banner
