@@ -21,6 +21,9 @@ Common resources, useful information, places to learn and look-up documentations
   
   Huge amount of attack vector information. Use this to get to know your weak spots or places to start looking.
 * (https://haveibeenpwned.com/Passwords)
+
+  Infostealer intelligence toolset. Check if a specific asset was compromised in a global malware campaign.
+* (https://www.hudsonrock.com/threat-intelligence-cybercrime-tools)
   
   Check if your emails and passwords are in contained in public data leaks. Also get automatic notifications if accounts of your domain are within a new leak (you need to own the domain for this)
 * (https://support.google.com/chrome/a/answer/187202?hl=en)
